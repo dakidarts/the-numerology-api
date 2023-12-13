@@ -1,19 +1,25 @@
-# The Numerology API
+# The Numerology API Changelog
 
-Welcome to the official repository for The Numerology API—a powerful tool that combines the ancient wisdom of numerology with the celestial insights of astrology. Whether you're a developer integrating cosmic features into your applications or an enthusiast exploring the mysteries of life, this API is your key to unlocking a universe of knowledge.
+## v0.0.2 - Celestial Expansion (13 Dec, 2023)
 
-## Key Features
+### New Features:
 
-- 🌌 **Numerological Insights:** Explore personality traits, life challenges, and cycles using Pythagorean numerology methods.
-- 🌠 **Horoscope Revelations:** Access daily, weekly, monthly, and yearly horoscopes for love, career, health, and planetary influences.
-- 🌟 **Zodiac Wisdom:** Uncover the unique traits of each zodiac sign, from personality and love compatibility to lifestyle choices.
+42. **Zodiac Sign Birthday:** Discover the unique personality traits associated with each zodiac sign based on birthdays.
+43. **Compatibility Career:** Explore astrological insights into career compatibility between individuals.
+44. **Compatibility Friendship:** Gain insights into the dynamics of friendship compatibility based on astrological signs.
+45. **Compatibility Love:** Delve into love compatibility insights, providing a deeper understanding of romantic relationships.
+46. **Astrology Aspects:** Explore the various aspects and angles between celestial bodies to understand their influence on an individual's life.
+47. **Astrology Houses:** Uncover the significance of astrological houses and their impact on different aspects of life.
+48. **Astrology Returns:** Explore significant astrological returns, such as the Solar Return and Lunar Return, to gain insights into specific periods of life.
+49. **Astrology Terms:** Familiarize yourself with essential astrology terms, creating a foundation for deeper astrological understanding.
+50. **Planets Horoscope:** Gain insights into the influence of individual planets on a person's horoscope and life path.
+51. **Planets in Houses:** Explore the significance of planets positioned in different astrological houses and their impact on an individual's life.
+52. **Mercury Retrograde Effect:** Understand the effects of Mercury retrograde on communication, technology, and daily life.
+53. **Saturn Returns Effect:** Explore the transformative effects of Saturn returns on an individual's life path and personal growth.
 
-## Getting Started
+## v0.0.1 - Cosmic Inception
 
-1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/showcase/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/kidddevs/api/the-numerology-api).
-2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
-
-## Current Features
+### Initial Features:
 
 1. **Attitude/Sun Number:** Discover the essence of one's personality.
 2. **Balance Number:** Uncover the equilibrium in life.
@@ -57,27 +63,7 @@ Welcome to the official repository for The Numerology API—a powerful tool that
 40. **Zodiac Sign Career & Money:** Navigate the professional and financial aspects linked to zodiac signs.
 41. **Zodiac Sign Parent & Child:** Explore the dynamics of parenting and child relationships influenced by zodiac signs.
 
-## New Features
+## Getting Started
 
-42. **Zodiac Sign Birthday:** Discover the unique personality traits associated with each zodiac sign based on birthdays.
-43. **Compatibility Career:** Explore astrological insights into career compatibility between individuals.
-44. **Compatibility Friendship:** Gain insights into the dynamics of friendship compatibility based on astrological signs.
-45. **Compatibility Love:** Delve into love compatibility insights, providing a deeper understanding of romantic relationships.
-46. **Astrology Aspects:** Explore the various aspects and angles between celestial bodies to understand their influence on an individual's life.
-47. **Astrology Houses:** Uncover the significance of astrological houses and their impact on different aspects of life.
-48. **Astrology Returns:** Explore significant astrological returns, such as the Solar Return and Lunar Return, to gain insights into specific periods of life.
-49. **Astrology Terms:** Familiarize yourself with essential astrology terms, creating a foundation for deeper astrological understanding.
-50. **Planets Horoscope:** Gain insights into the influence of individual planets on a person's horoscope and life path.
-51. **Planets in Houses:** Explore the significance of planets positioned in different astrological houses and their impact on an individual's life.
-52. **Mercury Retrograde Effect:** Understand the effects of Mercury retrograde on communication, technology, and daily life.
-53. **Saturn Returns Effect:** Explore the transformative effects of Saturn returns on an individual's life path and personal growth.
-
-
-## Stay Connected
-
-- 🌐 **Official Website:** [Visit DWS](https://dakidarts.com/)
-- 🐦 **X (Twitter):** [@dakidarts](https://twitter.com/dakidarts/) - Stay updated with the latest developments and announcements.
-
-Embrace the magic of numbers, stars, and cosmic revelations—start your journey with the Astro-Numerology API today!
-
-🚀 *Empower your applications with cosmic insights!* 🚀
+1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/showcase/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/kidddevs/api/the-numerology-api).
+2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
