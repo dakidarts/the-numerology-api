@@ -1,5 +1,22 @@
 # The Numerology API Changelog
 
+## v0.0.3 - Mystical Integration (Feb, 2025)
+
+### New Features:
+
+**Gematria Calculator:** Added a new endpoint /gematria that computes Gematria values using multiple systems, including:
+
+Ordinal Gematria
+Reverse Ordinal Gematria
+Pythagorean Gematria
+Standard Hebrew Gematria
+Hidden Meaning Interpretation: Returns possible symbolic or mystical meanings for certain numerical values.
+
+Improvements:
+
+API Performance Optimization: Enhanced query handling and response times for all endpoints.
+Better Error Handling: More detailed error messages for invalid inputs.
+
 ## v0.0.2 - Celestial Expansion (13 Dec, 2023)
 
 ### New Features:
