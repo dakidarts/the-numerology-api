@@ -13,7 +13,7 @@ Welcome to the official repository for The Numerology API—a powerful tool that
 1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/showcase/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/kidddevs/api/the-numerology-api).
 2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
 
-## Current Features
+## Features (v0.0.1)
 
 1. **Attitude/Sun Number:** Discover the essence of one's personality.
 2. **Balance Number:** Uncover the equilibrium in life.
@@ -57,7 +57,7 @@ Welcome to the official repository for The Numerology API—a powerful tool that
 40. **Zodiac Sign Career & Money:** Navigate the professional and financial aspects linked to zodiac signs.
 41. **Zodiac Sign Parent & Child:** Explore the dynamics of parenting and child relationships influenced by zodiac signs.
 
-## New Features
+## Added Features (v0.0.2)
 
 42. **Zodiac Sign Birthday:** Discover the unique personality traits associated with each zodiac sign based on birthdays.
 43. **Compatibility Career:** Explore astrological insights into career compatibility between individuals.
@@ -72,6 +72,20 @@ Welcome to the official repository for The Numerology API—a powerful tool that
 52. **Mercury Retrograde Effect:** Understand the effects of Mercury retrograde on communication, technology, and daily life.
 53. **Saturn Returns Effect:** Explore the transformative effects of Saturn returns on an individual's life path and personal growth.
 
+## New Features (v0.0.3)
+
+**Gematria Calculator:** Added a new endpoint /gematria that computes Gematria values using multiple systems, including:
+
+Ordinal Gematria
+Reverse Ordinal Gematria
+Pythagorean Gematria
+Standard Hebrew Gematria
+Hidden Meaning Interpretation: Returns possible symbolic or mystical meanings for certain numerical values.
+
+Improvements:
+
+API Performance Optimization: Enhanced query handling and response times for all endpoints.
+Better Error Handling: More detailed error messages for invalid inputs.
 
 ## Stay Connected
 
