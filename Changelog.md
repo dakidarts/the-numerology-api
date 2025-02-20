@@ -6,11 +6,11 @@
 
 **Gematria Calculator:** Added a new endpoint /gematria that computes Gematria values using multiple systems, including:
 
-Ordinal Gematria
-Reverse Ordinal Gematria
-Pythagorean Gematria
-Standard Hebrew Gematria
-Hidden Meaning Interpretation: Returns possible symbolic or mystical meanings for certain numerical values.
+**Ordinal Gematria**
+**Reverse Ordinal Gematria**
+**Pythagorean Gematria**
+**Standard Hebrew Gematria**
+**Hidden Meaning Interpretation:** Returns possible symbolic or mystical meanings for certain numerical values.
 
 Improvements:
 
