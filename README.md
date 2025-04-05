@@ -1,5 +1,7 @@
 # The Numerology API
 
+![The Numerology API Logo](https://res.cloudinary.com/ds64xs2lp/image/upload/v1731447994/numerologyAPIDevTo_trjxbj.jpg)
+
 Welcome to the official repository for The Numerology API—a powerful tool that combines the ancient wisdom of numerology with the celestial insights of astrology. Whether you're a developer integrating cosmic features into your applications or an enthusiast exploring the mysteries of life, this API is your key to unlocking a universe of knowledge.
 
 ## Key Features
