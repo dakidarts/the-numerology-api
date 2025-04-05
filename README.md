@@ -82,6 +82,29 @@ Pythagorean Gematria
 Standard Hebrew Gematria
 Hidden Meaning Interpretation: Returns possible symbolic or mystical meanings for certain numerical values.
 
+## v0.0.4 – Cosmic Charts & Customization (April 2025)
+
+### New Features:
+
+#### Birth Chart JSON Endpoint  
+**`/birth-chart`**: Returns a full natal chart as structured JSON, including astrological positions, houses, and planetary aspects.
+
+#### Birth Chart SVG Endpoint  
+**`/birth-chart/svg`**: Generates and returns a high-quality SVG natal chart image.
+
+- **Supported themes**: `light`, `dark`, `dark-high-contrast`, `classic`  
+- **Supported languages**: `EN`, `FR`, `PT`, `IT`, `CN`, `ES`, `RU`, `TR`, `DE`, `HI`
+
+**Note**: This endpoint returns an SVG image `(Content-Type: image/svg+xml)`. RapidAPI’s test console may not display it correctly. Please test the endpoint using a browser, Postman, or in your frontend app. Treat the response as text, not JSON.
+
+![The Numerology API Birth Chart Report](https://res.cloudinary.com/ds64xs2lp/image/upload/v1743891562/birth-chart-report-classic_ti0gjr.jpg)
+
+![The Numerology API Birth Chart Report](https://res.cloudinary.com/ds64xs2lp/image/upload/v1743891566/birth-chart-report-dark_azr2sm.jpg)
+
+### 2025 Support for Year Horoscope  
+The `/horoscope/yearly/*` endpoints now includes accurate horoscope calculations for **2025**.  
+*(2026 support coming soon!)*
+
 Improvements:
 
 API Performance Optimization: Enhanced query handling and response times for all endpoints.
