@@ -114,7 +114,7 @@ Better Error Handling: More detailed error messages for invalid inputs.
 
 ## Stay Connected
 
-- 🌐 **Official Website:** [Visit DWS](https://dakidarts.com/)
+- 🌐 **Official Website:** [Visit Dakidarts](https://dakidarts.com/)
 - 🐦 **X (Twitter):** [@dakidarts](https://twitter.com/dakidarts/) - Stay updated with the latest developments and announcements.
 
 Embrace the magic of numbers, stars, and cosmic revelations—start your journey with the Astro-Numerology API today!
