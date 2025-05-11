@@ -112,6 +112,25 @@ Improvements:
 API Performance Optimization: Enhanced query handling and response times for all endpoints.
 Better Error Handling: More detailed error messages for invalid inputs.
 
+## 🔮 v0.0.5 – Tarot Readings Are Here! (May 2025)
+
+We're excited to announce the **v0.0.5** release of the **Numerology API**, now enriched with mystical new endpoints that allow users to draw Tarot cards programmatically. Whether you're building a spiritual bot, daily horoscope app, or just love the magic of the cards, this update is for you!
+
+![The Numerology API Tarot Readings](https://res.cloudinary.com/ds64xs2lp/image/upload/v1746950049/Tarot-Reading_waanny.png)
+
+### ✨ What's New
+
+### `/tarot/reading` – Three-Card Tarot Spread  
+Dive deep into your **past, present, and future** with a classic 3-card Tarot pull. Each card comes with its upright or reversed meaning and a corresponding image.
+
+**Optional parameter:**
+- `mode=random` (default) – Shuffle fresh cards every request  
+- `mode=daily` – Get a consistent reading per day
+
+### `/tarot/power` – Single-Card Power Tarot  
+A quick yet powerful daily insight. Pull just **one Tarot card** to reveal guidance or affirmation for the moment.  
+Same `mode` parameter applies.
+
 ## Stay Connected
 
 - 🌐 **Official Website:** [Visit Dakidarts](https://dakidarts.com/)
