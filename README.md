@@ -133,7 +133,7 @@ Dive deep into your **past, present, and future** with a classic 3-card Tarot pu
 A quick yet powerful daily insight. Pull just **one Tarot card** to reveal guidance or affirmation for the moment.  
 Same `mode` parameter applies.
 
-#### 💥 v0.0.6 – Divine Expansion! (July 7, 2025)
+## 💥 v0.0.6 – Divine Expansion! (July 7, 2025)
 
 ### ✨ What’s New in v0.0.6
 
