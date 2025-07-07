@@ -4,6 +4,8 @@
 
 Welcome to the official repository for The Numerology API—a powerful tool that combines the ancient wisdom of numerology with the celestial insights of astrology. Whether you're a developer integrating cosmic features into your applications or an enthusiast exploring the mysteries of life, this API is your key to unlocking a universe of knowledge.
 
+> “As within, so without. As in the code, so in the cosmos.” — DWS Numerology API
+
 ## Key Features
 
 - 🌌 **Numerological Insights:** Explore personality traits, life challenges, and cycles using Pythagorean numerology methods.
@@ -130,6 +132,40 @@ Dive deep into your **past, present, and future** with a classic 3-card Tarot pu
 ### `/tarot/power` – Single-Card Power Tarot  
 A quick yet powerful daily insight. Pull just **one Tarot card** to reveal guidance or affirmation for the moment.  
 Same `mode` parameter applies.
+
+#### 💥 v0.0.6 – Divine Expansion! (July 7, 2025)
+
+### ✨ What’s New in v0.0.6
+
+We've added **9 transformational new endpoints**, expanding into **affirmations, ancestral decoding, vibrational time tracking**, and more — expanding the spiritual toolkit from 71 to **80 endpoints**!
+
+### 🔢 New Endpoints
+
+| Endpoint | Description |
+|----------|-------------|
+| `/personal-day` | Returns personal day number & meaning based on DOB + date |
+| `/personal-month` | Returns personal month number & meaning |
+| `/lucky-days-calendar` | Generates a 9–10 week lucky day calendar |
+| `/date-meaning` | Reduces any date (YYYY-MM-DD) into a numerological meaning |
+| `/email-numerology` | Decodes numerology energy from an email address |
+| `/cornerstone-letter` | Gets the first letter of a name and its cornerstone meaning |
+| `/capstone-letter` | Gets the last letter of a first name and its capstone meaning |
+| `/ancestor-reading` | Calculates ancestral number & spiritual legacy from family name |
+| `/personal-day-affirmations` | Stoic-style daily affirmations based on personal day number |
+
+Each endpoint supports **GET** and **POST** and includes robust **error handling**, `status` codes, and spiritual insights for devs, creators, and seekers.
+
+### 💸 Updated Pricing Plans
+
+We’ve **slashed pricing** and boosted request limits to support more developers, apps, and spiritual platforms.
+
+| Plan      | Old Price → New Price | Old Requests → New Requests |
+|-----------|------------------------|------------------------------|
+| **Pro**   | `$9.99` → `$9.17`      | `100,000` → `130,000` req/month |
+| **Ultra** | `$69.99` → `$63.17`    | `350,000` → `550,000` req/month |
+| **Mega**  | `$399.99` → `$369.17`  | `1,000,000` → `2,000,000` req/month |
+
+👉 **Free Plan** still available with up to `100 requests/month`.
 
 ## Stay Connected
 
