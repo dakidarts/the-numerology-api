@@ -1,5 +1,66 @@
 # The Numerology API Changelog
 
+## 🚀 v0.0.7 — *“The Awakening Release”* (August, 2025)
+
+We’re leveling up! v0.0.7 introduces **5 brand new endpoints**, expanding insights into personal numerology, life cycles, and hidden patterns in names. The spiritual toolkit no supports up to **85 endpoints**!
+
+This release also **includes our groundbreaking discovery** by Etuge Anselm E. — the **Hidden Passion Position Number (HPPN) & Gap Resonance**, giving users a deeper understanding of how personal energy manifests.
+
+Check out the full research here: [Hidden Passion Position Number & Gap Resonance Research Paper](https://dakidarts.com/p/research-paper-hidden-passion-position-number-hppn-gap-resonance-by-etuge-anselm-e/)
+
+![HPPN & Gap Resonance Release Paper](https://res.cloudinary.com/ds64xs2lp/image/upload/v1755804804/HPPN-and-Gap-Resonance_bgp1fg.jpg)
+
+### New Endpoints in v0.0.7
+
+#### 1️⃣ `/hidden-passion`
+
+* Calculates your **classic Hidden Passion Number** based on the most frequent letters in your name.
+* Returns **number, meaning, and detailed meaning**.
+* Supports **GET & POST** requests.
+
+#### 2️⃣ `/maturity-number`
+
+* Computes your **Maturity Number** using your **Life Path Number and Destiny Number**.
+* Reveals the **life purpose theme** you evolve into as you mature.
+* Returns **number, meaning, and detailed meaning**.
+* Supports **GET & POST** requests.
+
+#### 3️⃣ `/hidden-passion-positions` 💡
+
+* Brand new discovery by **Etuge Anselm E.**
+* Calculates **Hidden Passion Position Number (HPPN)** and **Gap Resonance** for your dominant letters.
+* Shows **letter positions, sum, reduced HPPN, gap vector, and meanings**.
+* Adds **a fresh dimension to traditional Hidden Passion numerology**.
+* [Read the Research Paper & Download Here](https://dakidarts.com/p/research-paper-hidden-passion-position-number-hppn-gap-resonance-by-etuge-anselm-e/)
+* Supports **GET & POST** requests.
+
+#### 4️⃣ `/pinnacle-cycles` 
+
+* Breaks your life into **4 major long-term cycles** (higher-level than Personal Year Numbers).
+* Each cycle includes: **start/end years, number, meaning, detailed meaning**.
+* Helps discover **life patterns, challenges, and opportunities**.
+* Supports **GET & POST** requests.
+
+#### 5️⃣ `/planes-of-expression` 
+
+* Maps letters in your **name** to **4 energy planes**: Physical, Mental, Emotional, Intuitive.
+* Returns **counts, meaning, and detailed meaning** for each plane.
+* Reveals **dominant energies, balance, and hidden traits**.
+* Supports **GET & POST** requests.
+
+### 🔧 Notes & Improvements
+
+* All endpoints now handle **GET & POST requests**.
+* Error handling improved across new endpoints — returns **status codes** with error messages.
+* All endpoints return **meanings and detailed meanings** wherever applicable.
+* Ready for integration with **RapidAPI**.
+
+### 🌟 Use this Release
+
+* Extend numerology insights beyond classic calculations.
+* Discover **new layers of personality and destiny** with HPPN & Gap Resonance.
+* Analyze **long-term cycles and energy planes** to optimize growth and alignment.
+
 ## 💥 v0.0.6 – Divine Expansion! (July 7, 2025)
 
 ### ✨ What’s New in v0.0.6
