@@ -219,5 +219,5 @@ Better Error Handling: More detailed error messages for invalid inputs.
 
 ## Getting Started
 
-1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/showcase/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/kidddevs/api/the-numerology-api).
+1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/api/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/kidddevs/api/the-numerology-api).
 2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
