@@ -2,7 +2,7 @@
 
 ## 🚀 v0.0.7 — *“The Awakening Release”* (August, 2025)
 
-We’re leveling up! v0.0.7 introduces **5 brand new endpoints**, expanding insights into personal numerology, life cycles, and hidden patterns in names. The spiritual toolkit no supports up to **85 endpoints**!
+We’re leveling up! v0.0.7 introduces **5 brand new endpoints**, expanding insights into personal numerology, life cycles, and hidden patterns in names. The spiritual toolkit now supports up to **85 endpoints**!
 
 This release also **includes our groundbreaking discovery** by Etuge Anselm E. — the **Hidden Passion Position Number (HPPN) & Gap Resonance**, giving users a deeper understanding of how personal energy manifests.
 
