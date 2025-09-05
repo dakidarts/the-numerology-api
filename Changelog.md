@@ -1,5 +1,48 @@
 # The Numerology API Changelog
 
+## 🚀 v0.0.8 — “The Mirror Dimension Release” (September, 2025)
+
+We step through the looking glass. v0.0.8 introduces **mirror-based numerology** — unlocking the hidden balance and reflective cycles between numbers. This release reveals how numbers mirror each other, form energetic loops, and guide us through transformation.
+
+Check out the full research here: [Research Paper: Mirror Numbers and Cycles Research Paper](https://dakidarts.com/p/mirror-numbers-and-circles-novel-extensions-in-numerological-analysis/)
+
+![HPPN & Gap Resonance Release Paper](https://res.cloudinary.com/ds64xs2lp/image/upload/v1757113153/Mirror-Numbers-Formula_vqm8j1.jpg)
+
+#### ✨ New Endpoints in v0.0.8
+
+#### 1️⃣ `/mirror-numbers` 💡
+
+Returns the **Mirror Grid** — mapping each number (1–9, 11, 22, 33) to its reflective counterpart.
+
+* Supports both `GET` & `POST`.
+* Input: `base` (optional) → single number analysis, or full grid if omitted.
+* Input: `expanded` (optional bool) → adds **detailed meaning + cycles**.
+* Output: mirror number, keyword, meaning, and (if expanded) detailed meaning, cycles, and cycle keywords.
+
+#### 2️⃣ `/mirror-path` 💡
+
+Projects your **Mirror Path & Cycles** from a given birth date or base number.
+
+* Shows how your numbers reflect into one another over time.
+* Returns **mirror transitions**, cycle loops, and meanings.
+* Useful for tracing karmic reflections and life balance themes.
+* Supports both `GET` & `POST`.
+
+### 🔧 Notes & Improvements
+
+* Added **expanded analysis mode** with cycle tracing.
+* Unified reduction logic for base numbers (respects master numbers 11, 22, 33).
+* Full error handling with status codes and descriptive error messages.
+* All responses return **keywords, meanings, and detailed meanings** where available.
+
+### 🌟 Use this Release
+
+* Explore the **mirror dimension of numerology** — see how numbers reflect hidden aspects of the self.
+* Trace **cycles and loops** for deeper karmic insight.
+* Integrate **mirror grid + mirror path** into spiritual apps, coaching tools, and personal dashboards.
+* Unlock new guidance for balance, duality, and transformation.
+
+
 ## 🚀 v0.0.7 — *“The Awakening Release”* (August, 2025)
 
 We’re leveling up! v0.0.7 introduces **5 brand new endpoints**, expanding insights into personal numerology, life cycles, and hidden patterns in names. The spiritual toolkit now supports up to **85 endpoints**!
