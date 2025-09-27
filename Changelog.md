@@ -1,5 +1,75 @@
 # The Numerology API Changelog
 
+## 🚀 v0.0.9 — “The Ascension Pathway Release”
+
+**Release Date:** September 27, 2025
+**Version:** 0.0.9
+
+### ✨ New Endpoints
+
+#### 1️⃣ Personal Hour
+
+* **Endpoint:** `/personal-hour`
+* **Description:** Calculate the personal hour number based on a user’s birthdate, target date, and timezone.
+* **Features:**
+
+  * Supports `GET` and `POST`.
+  * Optional `target_date` parameter (`YYYY-MM-DD`). Defaults to current date.
+  * Optional `timezone_offset` (default: `Europe/Paris`).
+  * Returns **single-digit numerology** for the hour, meaning, and 4-line detailed meaning.
+
+#### 2️⃣ Numerology Compatibility Score
+
+* **Endpoint:** `/compatibility-score`
+* **Description:** Compare numerology numbers of two people for relationship insights.
+* **Features:**
+
+  * Calculates **Life Path, Heart’s Desire, Personality, Hidden Passion, Attitude, Balance, Subconscious Self, Rational Thought, Destiny** numbers.
+  * Full names are merged before calculating **Hidden Passion**.
+  * Returns individual scores, overall compatibility, and textual insights.
+  * Supports `GET` query parameters and `POST` JSON body.
+
+#### 3️⃣ Angel Number Synchronicities
+
+* **Endpoint:** `/angel-number-sync`
+* **Description:** Returns meanings for repeating digits or mirrored angel number patterns.
+* **Features:**
+
+  * Detects repeated digits (e.g., `1111`, `2222`).
+  * Detects mirrored patterns (e.g., `1221`, `1212`).
+  * Reduces number to core numerology vibration and returns **base meaning**, **detailed meaning**, and **synchronicity insight**.
+  * Supports both `GET` and `POST`.
+
+
+### 🔄 Updated Endpoints
+
+* **Personal Day** `/personal-day`
+
+  * Added optional `timezone_offset` parameter.
+  * Uses user-local time for accurate personal day calculation.
+
+* **Personal Month** `/personal-month`
+
+  * Added optional `timezone_offset` parameter.
+  * Ensures personal month calculation aligns with user’s local date.
+
+
+### ⚡ Improvements
+
+* All numerology endpoints now consistently return:
+  * `meaning`
+  * `detailed_meaning` (expanded descriptions)
+* Timezone handling added for **personal day, personal month, and personal hour** to ensure local accuracy.
+* Improved error handling for invalid dates, timezones, and missing parameters.
+
+
+### 📌 Notes
+
+* Master numbers (11, 22, 33) are supported where relevant.
+* Personal hour only uses **single-digit numerology**.
+
+🔥 **v0.0.9 marks our most comprehensive numerology release yet — local timezone support, compatibility insights, angel synchronicities, and richer detailed meanings across the board!**
+
 ## 🚀 v0.0.8 — “The Mirror Dimension Release” (September, 2025)
 
 We step through the looking glass. v0.0.8 introduces **mirror-based numerology** — unlocking the hidden balance and reflective cycles between numbers. This release reveals how numbers mirror each other, form energetic loops, and guide us through transformation.
