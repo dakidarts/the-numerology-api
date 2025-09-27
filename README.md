@@ -1,6 +1,6 @@
 # The Numerology API
 
-![The Numerology API Logo](https://res.cloudinary.com/ds64xs2lp/image/upload/v1731447994/numerologyAPIDevTo_trjxbj.jpg)
+![The Numerology API Logo](https://res.cloudinary.com/ds64xs2lp/image/upload/v1758341353/cover_dne2nf.jpg)
 
 Welcome to the official repository for The Numerology API—a powerful tool that combines the ancient wisdom of numerology with the celestial insights of astrology. Whether you're a developer integrating cosmic features into your applications or an enthusiast exploring the mysteries of life, this API is your key to unlocking a universe of knowledge.
 
@@ -269,6 +269,76 @@ Projects your **Mirror Path & Cycles** from a given birth date or base number.
 * Trace **cycles and loops** for deeper karmic insight.
 * Integrate **mirror grid + mirror path** into spiritual apps, coaching tools, and personal dashboards.
 * Unlock new guidance for balance, duality, and transformation.
+
+## 🚀 v0.0.9 — “The Ascension Pathway Release”
+
+**Release Date:** September 27, 2025
+**Version:** 0.0.9
+
+### ✨ New Endpoints
+
+#### 1️⃣ Personal Hour
+
+* **Endpoint:** `/personal-hour`
+* **Description:** Calculate the personal hour number based on a user’s birthdate, target date, and timezone.
+* **Features:**
+
+  * Supports `GET` and `POST`.
+  * Optional `target_date` parameter (`YYYY-MM-DD`). Defaults to current date.
+  * Optional `timezone_offset` (default: `Europe/Paris`).
+  * Returns **single-digit numerology** for the hour, meaning, and 4-line detailed meaning.
+
+#### 2️⃣ Numerology Compatibility Score
+
+* **Endpoint:** `/compatibility-score`
+* **Description:** Compare numerology numbers of two people for relationship insights.
+* **Features:**
+
+  * Calculates **Life Path, Heart’s Desire, Personality, Hidden Passion, Attitude, Balance, Subconscious Self, Rational Thought, Destiny** numbers.
+  * Full names are merged before calculating **Hidden Passion**.
+  * Returns individual scores, overall compatibility, and textual insights.
+  * Supports `GET` query parameters and `POST` JSON body.
+
+#### 3️⃣ Angel Number Synchronicities
+
+* **Endpoint:** `/angel-number-sync`
+* **Description:** Returns meanings for repeating digits or mirrored angel number patterns.
+* **Features:**
+
+  * Detects repeated digits (e.g., `1111`, `2222`).
+  * Detects mirrored patterns (e.g., `1221`, `1212`).
+  * Reduces number to core numerology vibration and returns **base meaning**, **detailed meaning**, and **synchronicity insight**.
+  * Supports both `GET` and `POST`.
+
+
+### 🔄 Updated Endpoints
+
+* **Personal Day** `/personal-day`
+
+  * Added optional `timezone_offset` parameter.
+  * Uses user-local time for accurate personal day calculation.
+
+* **Personal Month** `/personal-month`
+
+  * Added optional `timezone_offset` parameter.
+  * Ensures personal month calculation aligns with user’s local date.
+
+
+### ⚡ Improvements
+
+* All numerology endpoints now consistently return:
+  * `meaning`
+  * `detailed_meaning` (expanded descriptions)
+* Timezone handling added for **personal day, personal month, and personal hour** to ensure local accuracy.
+* Improved error handling for invalid dates, timezones, and missing parameters.
+
+
+### 📌 Notes
+
+* Master numbers (11, 22, 33) are supported where relevant.
+* Personal hour only uses **single-digit numerology**.
+
+🔥 **v0.0.9 marks our most comprehensive numerology release yet — local timezone support, compatibility insights, angel synchronicities, and richer detailed meanings across the board!**
 
 
 ## Stay Connected
