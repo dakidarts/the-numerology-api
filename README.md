@@ -17,6 +17,14 @@ Welcome to the official repository for The Numerology API—a powerful tool that
 1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/api/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/dakidarts-dakidarts-default/api/the-numerology-api).
 2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
 
+## 🪄 Free Wordpress Plugin
+
+This free WordPress plugin connects your website with the Dakidarts Numerology API — enabling you to display powerful numerology insights using shortcodes or Gutenberg blocks.
+
+![The Dakidarts Numerology Plugin For Wordpress](https://res.cloudinary.com/ds64xs2lp/image/upload/v1759781732/wordpress-numerology-plugin-1544x500_amsg5n.jpg)
+
+👉 [Download Numerology Plugin](https://shop.dakidarts.com/product/dakidarts-numerology-plugin-core-free-wordpress-plugin-for-numerology-horoscope-zodiac-api-integration/)
+
 ## Features (v0.0.1)
 
 1. **Attitude/Sun Number:** Discover the essence of one's personality.
