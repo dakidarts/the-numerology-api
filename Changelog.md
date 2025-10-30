@@ -1,5 +1,83 @@
 # The Numerology API Changelog
 
+##  🚀 v0.1.0 — “The Galactic Blueprint Release” (Oct 29, 2025)
+
+The **Dakidarts Numerology API** reaches its **first major milestone** — crossing **100 powerful endpoints**.
+This release expands the numerological universe with *deeper spiritual analytics* and *premium cosmic insights* for advanced users and developers.
+
+### ✨ **New Endpoints (v0.1.0)**
+
+Unlock 10 advanced numerology tools for deeper personality and life-path decoding:
+
+| Endpoint            | Description                                                                                                    |
+| ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `/birth-day-number` | Returns the **Birth Day Number** and its meaning (based purely on the day of birth).                           |
+| `/life-essence`     | Combines **Life Path + Soul Urge + Expression** for a unified vibration summary — your core essence blueprint. |
+
+#### 🌌 Cycles & Transits
+
+| Endpoint         | Description                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------- |
+| `/essence-cycle` | Calculates your **Essence Cycles**, showing numerological influence patterns across life periods.     |
+| `/transits`      | Returns **letter-based transits** derived from name vibrations, revealing yearly personal influences. |
+
+#### 🌠 Minor Numbers (Hidden Aspects)
+
+| Endpoint              | Description                                                              |
+| --------------------- | ------------------------------------------------------------------------ |
+| `/minor-personality`  | Reveals how your **short name / nickname** shapes external impressions.  |
+| `/minor-heart-desire` | Shows inner emotional drives derived from **vowels in your short name**. |
+| `/minor-expression`   | Shows outer expression derived from the **full short name** vibration.   |
+
+#### 🧩 Bridge Numbers (Connections Between Vibrations)
+
+| Endpoint                    | Description                                                                                                  |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `/life-expression-bridge`   | Bridge between **Life Path & Expression** — reveals how your purpose meets your talents.                     |
+| `/life-birthday-bridge`     | Bridge between **Life Path & Birth Day** — shows how to harmonize core life goals with natural gifts.        |
+| `/heart-personality-bridge` | Bridge between **Heart’s Desire & Personality** — shows alignment between inner emotions and outer behavior. |
+
+### ⚙️ Improvements
+
+* **Unified GET & POST Support:** Every endpoint supports both GET and POST requests for maximum flexibility.
+* **Enhanced Error Handling:** Cleaner, consistent error responses across all endpoints.
+
+### 🧠 Stats Snapshot
+
+* **Total Endpoints:** 100
+* **Premium Endpoints:** 10
+* **Release Date:** Oct 29, 2025
+* **Codename:** *“The Galactic Blueprint Release”*
+
+### 📜 Example (Birth Day Endpoint)
+
+**Endpoint:** `/birth-day`
+**Methods:** `GET`, `POST`
+
+**Parameters:**
+
+```json
+{
+  "birthdate": "1998-04-27"
+}
+```
+
+**Response:**
+
+```json
+{
+  "birth_day_number": 27,
+  "keyword": "The Humanitarian Sage",
+  "meaning": "Compassionate, wise, and a spiritual guide for the collective.",
+  "detailed_meaning": "27 reduces to 9 with a strong 7 overlay. You merge analytical depth with universal love, often drawn to teaching, writing, or healing on a large scale. Your soul’s mission is enlightenment through service. Shadow work: release perfectionism; imperfect action still moves the world.",
+  "status": 200
+}
+```
+
+### 🌠 Closing Note
+
+Stay tuned for **v0.1.1 — “The Astral Continuum Release”**
+
 ## 🚀 v0.0.9 — “The Ascension Pathway Release”
 
 **Release Date:** September 27, 2025
