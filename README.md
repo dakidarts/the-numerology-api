@@ -17,6 +17,19 @@ Welcome to the official repository for The Numerology API—a powerful tool that
 1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/api/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/dakidarts-dakidarts-default/api/the-numerology-api).
 2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
 
+
+## 🗂️ New Documentation Site Launched!
+
+Explore the full power of **The Numerology API** at our brand-new docs site:
+
+[https://numerologyapi.com](https://numerologyapi.com)
+
+- 100+ endpoints documented  
+- Code examples in Python, JS, PHP  
+- Interactive API reference  
+
+**Perfect for developers, astrologers, and spiritual tech builders.**
+
 ## 🪄 Free Wordpress Plugin
 
 This free WordPress plugin connects your website with the Dakidarts Numerology API — enabling you to display powerful numerology insights using shortcodes or Gutenberg blocks.
