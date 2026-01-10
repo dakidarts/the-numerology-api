@@ -1,5 +1,59 @@
 # The Numerology API Changelog
 
+## 🚀 v0.1.1 — “The Conscious Expansion Release”
+**Release Date:** Jan 10, 2026
+
+
+### 🌌 Overview
+
+Version **v0.1.1** marks a **major evolutionary leap** for the Numerology & Astrology API.
+
+This release goes far beyond new endpoints — it represents a **deep refinement of the entire system**, transforming the API from a numerical calculator into a **conscious intelligence engine** delivering rich, themed, and human-centered insights.
+
+All **core numerology endpoints (17+)** have been enhanced to return **context-aware, spiritually grounded, and clarity-driven responses**, making the API more intuitive, insightful, and valuable for real-world use cases.
+
+### ✨ What’s New
+
+#### 🔮 New Endpoints (5 Added)
+
+The following **premium report endpoints** were introduced, expanding the API into **relationship, cycle, and life-pattern intelligence**:
+
+1. **Personal Cycle Report**
+   - Combines **Personal Year** and **Universal Year** cycles
+   - Explains how individual energy interacts with the collective timeline
+   - Designed for clarity, planning, and conscious decision-making
+
+2. **Lifestyle Compatibility Report**
+   - Analyzes daily habits, routines, social life, and living dynamics
+   - Ideal for couples, co-living partners, and long-term alignment
+
+3. **Communication Compatibility Report**
+   - Explores expression styles, listening quality, conflict resolution, and emotional intelligence
+   - Focuses on how conversations actually flow between two people
+
+4. **Growth & Evolution Compatibility Report**
+   - Examines mutual growth potential, change support, and spiritual or personal evolution
+   - Built for conscious relationships and long-term transformation
+
+5. **Financial Compatibility Report**
+   - Analyzes money mindset, risk tolerance, wealth-building potential, and financial dynamics
+   - Ideal for couples, spouses, and business collaborators
+
+
+#### 🧠 Core API Enhancements
+
+- ✅ **17+ core numerology endpoints upgraded**
+- 🎨 All responses now return **themed, content-rich interpretations**
+- 📖 Improved clarity and narrative flow for end users
+- 🌱 More human, intuitive, and spiritually grounded insights
+- 🧩 Consistent structure across all endpoints for easier integration
+
+These upgrades significantly improve:
+- User understanding
+- Client-facing report quality
+- Coaching, spiritual, and advisory applications
+
+
 ##  🚀 v0.1.0 — “The Galactic Blueprint Release” (Oct 29, 2025)
 
 The **Dakidarts Numerology API** reaches its **first major milestone** — crossing **100 powerful endpoints**.
