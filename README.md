@@ -435,9 +435,115 @@ Unlock 10 advanced numerology tools for deeper personality and life-path decodin
 }
 ```
 
-### 🌠 Closing Note
+## 🚀 v0.1.1 — “The Conscious Expansion Release”
+**Release Date:** Jan 10, 2026
 
-Stay tuned for **v0.1.1 — “The Astral Continuum Release”**
+
+### 🌌 Overview
+
+Version **v0.1.1** marks a **major evolutionary leap** for the Numerology & Astrology API.
+
+This release goes far beyond new endpoints — it represents a **deep refinement of the entire system**, transforming the API from a numerical calculator into a **conscious intelligence engine** delivering rich, themed, and human-centered insights.
+
+All **core numerology endpoints (17+)** have been enhanced to return **context-aware, spiritually grounded, and clarity-driven responses**, making the API more intuitive, insightful, and valuable for real-world use cases.
+
+### ✨ What’s New
+
+#### 🔮 New Endpoints (5 Added)
+
+The following **premium report endpoints** were introduced, expanding the API into **relationship, cycle, and life-pattern intelligence**:
+
+1. **Personal Cycle Report**
+   - Combines **Personal Year** and **Universal Year** cycles
+   - Explains how individual energy interacts with the collective timeline
+   - Designed for clarity, planning, and conscious decision-making
+
+2. **Lifestyle Compatibility Report**
+   - Analyzes daily habits, routines, social life, and living dynamics
+   - Ideal for couples, co-living partners, and long-term alignment
+
+3. **Communication Compatibility Report**
+   - Explores expression styles, listening quality, conflict resolution, and emotional intelligence
+   - Focuses on how conversations actually flow between two people
+
+4. **Growth & Evolution Compatibility Report**
+   - Examines mutual growth potential, change support, and spiritual or personal evolution
+   - Built for conscious relationships and long-term transformation
+
+5. **Financial Compatibility Report**
+   - Analyzes money mindset, risk tolerance, wealth-building potential, and financial dynamics
+   - Ideal for couples, spouses, and business collaborators
+
+
+#### 🧠 Core API Enhancements
+
+- ✅ **17+ core numerology endpoints upgraded**
+- 🎨 All responses now return **themed, content-rich interpretations**
+- 📖 Improved clarity and narrative flow for end users
+- 🌱 More human, intuitive, and spiritually grounded insights
+- 🧩 Consistent structure across all endpoints for easier integration
+
+These upgrades significantly improve:
+- User understanding
+- Client-facing report quality
+- Coaching, spiritual, and advisory applications
+
+
+#### ⚡ Performance & Stability
+
+- Minor bug fixes across multiple endpoints
+- Improved caching strategies (LRU + response-level caching)
+- Faster response times for high-frequency endpoints
+- Improved consistency in metadata and response formatting
+
+
+### 🧩 Tooling & Ecosystem Expansion
+
+#### 🧾 Firefox Extension: Numerology Report Generator Pro
+
+To support practitioners, coaches, and everyday users, we released a companion browser tool:
+
+- **GitHub Repository**  
+  👉 https://github.com/dakidarts/numerology-report-generator-pro
+
+- **Firefox Add-ons Store**  
+  👉 https://addons.mozilla.org/en-US/firefox/addon/numerology-report-generator/
+
+#### Key Features:
+- Generate **intuitive numerology PDF reports directly from the browser**
+- No coding required
+- Ideal for:
+  - Numerologists
+  - Coaches
+  - Spiritual practitioners
+  - Content creators
+  - Everyday users seeking insight
+
+This extension bridges the gap between **API power** and **real-world usability**.
+
+
+### 🧬 Why This Release Matters
+
+v0.1.1 represents a shift from:
+> **“Calculations” → “Conscious Interpretation”**
+
+The API is now positioned as:
+- A **numerology intelligence platform**
+- A **relationship and cycle awareness engine**
+- A foundation for **spiritual, coaching, and personal development tools**
+
+
+### 🛣️ Looking Ahead
+
+Future versions will continue expanding into:
+- Karmic & soul-level compatibility
+- Advanced cycle forecasting
+- Consciousness-aware numerology models
+- Deeper integrations with tools and extensions
+
+
+**Thank you to everyone building with the Numerology & Astrology API.**  
+This journey is just beginning 🌌
 
 ## Stay Connected
 
