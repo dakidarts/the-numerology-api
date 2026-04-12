@@ -1,555 +1,383 @@
 # The Numerology API
 
-![The Numerology API Logo](https://res.cloudinary.com/ds64xs2lp/image/upload/v1758341353/cover_dne2nf.jpg)
-
-Welcome to the official repository for The Numerology API—a powerful tool that combines the ancient wisdom of numerology with the celestial insights of astrology. Whether you're a developer integrating cosmic features into your applications or an enthusiast exploring the mysteries of life, this API is your key to unlocking a universe of knowledge.
-
-> “As within, so without. As in the code, so in the cosmos.” — DWS Numerology API
-
-## Key Features
-
-- 🌌 **Numerological Insights:** Explore personality traits, life challenges, and cycles using Pythagorean numerology methods.
-- 🌠 **Horoscope Revelations:** Access daily, weekly, monthly, and yearly horoscopes for love, career, health, and planetary influences.
-- 🌟 **Zodiac Wisdom:** Uncover the unique traits of each zodiac sign, from personality and love compatibility to lifestyle choices.
-
-## Getting Started
-
-1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/api/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/dakidarts-dakidarts-default/api/the-numerology-api).
-2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
-
-
-## 🗂️ New Documentation Site Launched!
-
-Explore the full power of **The Numerology API** at our brand-new docs site:
-
-[https://numerologyapi.com](https://numerologyapi.com)
-
-- 100+ endpoints documented  
-- Code examples in Python, JS, PHP  
-- Interactive API reference  
+<p align="center">
+  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1758341353/cover_dne2nf.jpg" alt="The Numerology API Cover" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://docs.numerologyapi.com/">
+    <img src="https://img.shields.io/badge/docs-live-0ea5e9?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Docs Live" />
+  </a>
+  <a href="https://dashboard.numerologyapi.com/">
+    <img src="https://img.shields.io/badge/dashboard-open-111827?style=for-the-badge&logo=speedtest&logoColor=white" alt="Dashboard" />
+  </a>
+  <a href="https://numerologyapi.com/">
+    <img src="https://img.shields.io/badge/platform-numerologyapi.com-14b8c9?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Platform" />
+  </a>
+  <a href="https://rapidapi.com/dakidarts-dakidarts-default/api/the-numerology-api">
+    <img src="https://img.shields.io/badge/rapidapi-marketplace-7c3aed?style=for-the-badge&logo=rapid&logoColor=white" alt="RapidAPI" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-v1.0.0-22c55e?style=flat-square" alt="Version v1.0.0" />
+  <img src="https://img.shields.io/badge/docs-203%2B%20endpoint%20pages-0f766e?style=flat-square" alt="203+ endpoint pages" />
+  <img src="https://img.shields.io/badge/languages-en%20%7C%20es%20%7C%20de%20%7C%20fr%20%7C%20pt-1d4ed8?style=flat-square" alt="Languages" />
+  <img src="https://img.shields.io/badge/engine-Swiss%20Ephemeris%20powered-0f172a?style=flat-square" alt="Swiss Ephemeris powered engine" />
+</p>
+
+> **The Numerology API** is a production-ready numerology and astrology platform for developers, founders, spiritual products, content systems, bots, and report-driven apps.
+>
+> It combines **core numerology**, **extended numerology intelligence**, **birth charts**, **horoscope reports**, **compatibility systems**, **timing endpoints**, and an **in-house horoscope engine** into one unified developer platform.
+
+---
+
+## Why this project matters
+
+Most numerology or astrology APIs stop at raw calculations or thin summaries.
+
+**The Numerology API** goes further with:
+
+- structured and integration-friendly JSON responses
+- deep endpoint coverage across numerology, astrology, horoscope, tarot, and symbolic systems
+- multilingual support across major surfaces
+- direct platform access for premium and extended releases
+- an in-house horoscope engine built for deterministic, production-grade report generation
+- developer-ready documentation, dashboard access, and real rollout discipline
+
+This repository is the public home of the platform, release history, ecosystem tooling, and product direction.
+
+---
+
+## What ships in v1.0.0
+
+**v1.0.0** is the platform’s most important release so far.
+
+It brings together two major expansion tracks:
+
+### Numerology Expansion
+- 23 new extended endpoint families
+- 41 new GET/POST operations
+- personal week and universal day/week/month/year coverage
+- deeper spiritual, identity, relationship, and shadow-analysis endpoints
+- 100% multilingual smoke validation across `en`, `es`, `de`, `fr`, `pt`
+
+### Horoscope Expansion
+- major migration of horoscope reports to the in-house Swiss Ephemeris engine
+- canonical report namespace under `/api/v1/horoscope/reports/*`
+- new planetary, aspects, transits, house, and planet-house report suites
+- broader daily, weekly, monthly, and yearly section coverage
+- tighter request and response parity across upgraded report surfaces
+
+### Platform-Level Improvements
+- stronger POST-first request structure for upgraded routes
+- richer report payloads and metadata wrappers
+- better docs parity and migration clarity
+- improved production readiness for direct-platform consumers
+
+📘 **Read the full changelog:**  
+**https://docs.numerologyapi.com/changelog/changelog-v1-0-0/**
+
+---
+
+## Core product surface
+
+### Numerology
+Build with powerful numerology endpoints for:
+
+- life path
+- destiny / expression
+- heart desire / soul urge
+- personality
+- maturity
+- balance
+- rational thought
+- hidden passion
+- ancestor reading
+- capstone / cornerstone
+- compatibility score
+- angel number synchronicity
+- gematria
+- and more
+
+### Cycles and timing
+Use timing and forecasting tools such as:
+
+- personal year
+- personal month
+- personal day
+- personal week
+- personal hour
+- universal year
+- universal month
+- universal week
+- universal day
+- monthly energy heatmap
+- caution dates calendar
+- lucky days calendar
+- personal cycle report
+
+### Identity, relationship, and spiritual intelligence
+Expand beyond basic numerology with advanced endpoints like:
+
+- username numerology
+- business name numerology
+- brand name compare
+- name change impact
+- relationship composite
+- relationship healing reading
+- parent child numerology
+- soul contract reading
+- soul connection indicator
+- aura frequency reading
+- chakra numerology
+- sacred balance reading
+- shadow work number
+- spiritual gifts reading
+- past life patterns
 
-**Perfect for developers, astrologers, and spiritual tech builders.**
-
-## 🪄 Free Wordpress Plugin
+### Horoscope and astrology
+Access a much broader astrology stack, including:
 
-This free WordPress plugin connects your website with the Dakidarts Numerology API — enabling you to display powerful numerology insights using shortcodes or Gutenberg blocks.
+- daily / weekly / monthly / yearly horoscope reports
+- career, love, health, money, friendship, communication, and lifestyle sections
+- sign intelligence endpoints
+- birth chart JSON
+- birth chart SVG
+- aspects reports
+- planetary reports
+- transit reports
+- house reports
+- planet-in-house reports
+- compatibility and astrology reference surfaces
 
-![The Dakidarts Numerology Plugin For Wordpress](https://res.cloudinary.com/ds64xs2lp/image/upload/v1759781732/wordpress-numerology-plugin-1544x500_amsg5n.jpg)
+---
 
-👉 [Get Started With The Numerology Plugin](https://hub.dakidarts.com/getting-started-with-dakidarts-numerology-wordpress-plugin/)
+## Documentation
 
-## Features (v0.0.1)
+### Official documentation
+- **Docs:** https://docs.numerologyapi.com/
+- **Main platform:** https://numerologyapi.com/
+- **Dashboard:** https://dashboard.numerologyapi.com/
 
-1. **Attitude/Sun Number:** Discover the essence of one's personality.
-2. **Balance Number:** Uncover the equilibrium in life.
-3. **Challenge Number:** Navigate life challenges with precision.
-4. **Karmic Debt Number:** Understand and address karmic debts.
-5. **Karmic Lesson Numbers:** Learn the lessons embedded in life experiences.
-6. **Life Period Cycle Numbers:** Gain insights into life cycles.
-7. **Lucky Numbers:** Identify numbers with positive vibes.
-8. **Personality Number:** Decode the characteristics defining an individual.
-9. **Personal Year Number:** Navigate through yearly influences.
-10. **Rational Thought Number:** Explore the intellect's influence.
-11. **Soul Expression/Destiny Number:** Reveal the soul's purpose.
-12. **Soul Urge Number:** Understand inner desires.
-13. **Subconscious Self Number:** Delve into the hidden realms of the psyche.
-14. **Analyze a person's phone number:** Uncover numeric vibrations.
-15. **Determine Life Path:** Calculate life's journey based on birthdate.
-16. **Daily Horoscope (Yesterday, Today, Tomorrow):** Receive personalized daily insights.
-17. **Weekly Horoscope:** Plan your week with astrological guidance.
-18. **Monthly Horoscope:** Navigate the month ahead with foresight.
-19. **Yearly Personal Horoscope:** Gain a holistic view of the year's events.
-20. **Love Daily Horoscope:** Explore love insights for yesterday, today, and tomorrow.
-21. **Love Weekly Horoscope (Couples, Singles):** Relationship guidance for the week.
-22. **Love Monthly Horoscope (Couples, Singles):** Love insights for the month.
-23. **Love Yearly Couples Horoscope:** Explore relationship dynamics annually.
-24. **Love Yearly Singles Horoscope:** Insights tailored for singles seeking love.
-25. **Career Daily Horoscope:** Professional insights for yesterday, today, and tomorrow.
-26. **Career Weekly Horoscope:** Plan your workweek with career-focused guidance.
-27. **Career Monthly Horoscope:** Navigate your career path for the month.
-28. **Career Yearly Horoscope:** Plan your financial and professional trajectory.
-29. **Health Daily Horoscope:** Well-being insights for yesterday, today, and tomorrow.
-30. **Health Weekly Horoscope:** Plan your week with health-focused guidance.
-31. **Health Monthly Horoscope:** Wellness insights for the month.
-32. **Planetary Daily Horoscope:** Planetary insights for yesterday, today, and tomorrow.
-33. **Planetary Weekly/Monthly Horoscope:** Explore weekly and monthly planetary influences.
-34. **Zodiac Sign Personality:** Uncover the unique traits and characteristics of each zodiac sign.
-35. **Zodiac Sign Friendship:** Explore the dynamics of friendships based on zodiac signs.
-36. **Zodiac Sign Love:** Delve into the romantic aspects of zodiac signs.
-37. **Zodiac Sign Lifestyle:** Gain a glimpse into the lifestyle preferences associated with each zodiac sign.
-38. **Zodiac Sign Health:** Understand the potential health tendencies and wellness considerations linked to specific zodiac signs.
-39. **Zodiac Sign Spirituality:** Explore the spiritual inclinations and tendencies associated with each zodiac sign.
-40. **Zodiac Sign Career & Money:** Navigate the professional and financial aspects linked to zodiac signs.
-41. **Zodiac Sign Parent & Child:** Explore the dynamics of parenting and child relationships influenced by zodiac signs.
+The docs site includes:
 
-## Added Features (v0.0.2)
+- 203+ documented endpoint/reference pages
+- code snippets and integration examples
+- changelog and release notes
+- extension and plugin docs
+- direct platform guidance for premium surfaces
 
-42. **Zodiac Sign Birthday:** Discover the unique personality traits associated with each zodiac sign based on birthdays.
-43. **Compatibility Career:** Explore astrological insights into career compatibility between individuals.
-44. **Compatibility Friendship:** Gain insights into the dynamics of friendship compatibility based on astrological signs.
-45. **Compatibility Love:** Delve into love compatibility insights, providing a deeper understanding of romantic relationships.
-46. **Astrology Aspects:** Explore the various aspects and angles between celestial bodies to understand their influence on an individual's life.
-47. **Astrology Houses:** Uncover the significance of astrological houses and their impact on different aspects of life.
-48. **Astrology Returns:** Explore significant astrological returns, such as the Solar Return and Lunar Return, to gain insights into specific periods of life.
-49. **Astrology Terms:** Familiarize yourself with essential astrology terms, creating a foundation for deeper astrological understanding.
-50. **Planets Horoscope:** Gain insights into the influence of individual planets on a person's horoscope and life path.
-51. **Planets in Houses:** Explore the significance of planets positioned in different astrological houses and their impact on an individual's life.
-52. **Mercury Retrograde Effect:** Understand the effects of Mercury retrograde on communication, technology, and daily life.
-53. **Saturn Returns Effect:** Explore the transformative effects of Saturn returns on an individual's life path and personal growth.
+---
 
-## New Features (v0.0.3)
+## Access channels
 
-**Gematria Calculator:** Added a new endpoint /gematria that computes Gematria values using multiple systems, including:
+### Direct platform access
+For the newest and most advanced platform capabilities, use:
 
-Ordinal Gematria
-Reverse Ordinal Gematria
-Pythagorean Gematria
-Standard Hebrew Gematria
-Hidden Meaning Interpretation: Returns possible symbolic or mystical meanings for certain numerical values.
+- **Base URL:** `https://api.numerologyapi.com`
+- **Auth:** `X-API-Key: YOUR_API_KEY`
+- or `Authorization: Bearer YOUR_API_KEY`
 
-## v0.0.4 – Cosmic Charts & Customization (April 2025)
+### RapidAPI
+Marketplace access remains available for supported public surfaces on RapidAPI:
 
-### New Features:
+- https://rapidapi.com/dakidarts-dakidarts-default/api/the-numerology-api
 
-#### Birth Chart JSON Endpoint  
-**`/birth-chart`**: Returns a full natal chart as structured JSON, including astrological positions, houses, and planetary aspects.
+> Some newer and extended releases are **direct-platform only** and are not fully mirrored through RapidAPI.
 
-#### Birth Chart SVG Endpoint  
-**`/birth-chart/svg`**: Generates and returns a high-quality SVG natal chart image.
+---
 
-- **Supported themes**: `light`, `dark`, `dark-high-contrast`, `classic`  
-- **Supported languages**: `EN`, `FR`, `PT`, `IT`, `CN`, `ES`, `RU`, `TR`, `DE`, `HI`
+## Example use cases
 
-**Note**: This endpoint returns an SVG image `(Content-Type: image/svg+xml)`. RapidAPI’s test console may not display it correctly. Please test the endpoint using a browser, Postman, or in your frontend app. Treat the response as text, not JSON.
+The Numerology API is built for products such as:
 
-![The Numerology API Birth Chart Report](https://res.cloudinary.com/ds64xs2lp/image/upload/v1743891562/birth-chart-report-classic_ti0gjr.jpg)
+- mobile numerology apps
+- astrology and horoscope apps
+- dashboard products
+- personalized PDF/report generators
+- compatibility tools
+- spiritual coaching software
+- Telegram and WhatsApp bots
+- browser extensions
+- WordPress integrations
+- content automation and SEO engines
+- SaaS products that need symbolic or timing-based intelligence
 
-![The Numerology API Birth Chart Report](https://res.cloudinary.com/ds64xs2lp/image/upload/v1743891566/birth-chart-report-dark_azr2sm.jpg)
+---
 
-### 2025 Support for Year Horoscope  
-The `/horoscope/yearly/*` endpoints now includes accurate horoscope calculations for **2025**.  
-*(2026 support coming soon!)*
+## Ecosystem
 
-Improvements:
+### Documentation site
+A dedicated docs platform with structured navigation, examples, changelogs, and release pages:
 
-API Performance Optimization: Enhanced query handling and response times for all endpoints.
-Better Error Handling: More detailed error messages for invalid inputs.
+- https://docs.numerologyapi.com/
 
-## 🔮 v0.0.5 – Tarot Readings Are Here! (May 2025)
+### Numerology dashboard
+Manage access, keys, credits, and usage:
 
-We're excited to announce the **v0.0.5** release of the **Numerology API**, now enriched with mystical new endpoints that allow users to draw Tarot cards programmatically. Whether you're building a spiritual bot, daily horoscope app, or just love the magic of the cards, this update is for you!
+- https://dashboard.numerologyapi.com/
 
-![The Numerology API Tarot Readings](https://res.cloudinary.com/ds64xs2lp/image/upload/v1746950049/Tarot-Reading_waanny.png)
+### Numerology bot
+Official bot experience powered by the platform:
 
-### ✨ What's New
+- https://numerologybot.com
+- https://t.me/NumerologyAstroBot
 
-### `/tarot/reading` – Three-Card Tarot Spread  
-Dive deep into your **past, present, and future** with a classic 3-card Tarot pull. Each card comes with its upright or reversed meaning and a corresponding image.
+### WordPress plugin
+Free plugin for bringing numerology insights into WordPress sites:
 
-**Optional parameter:**
-- `mode=random` (default) – Shuffle fresh cards every request  
-- `mode=daily` – Get a consistent reading per day
+- https://hub.dakidarts.com/getting-started-with-dakidarts-numerology-wordpress-plugin/
 
-### `/tarot/power` – Single-Card Power Tarot  
-A quick yet powerful daily insight. Pull just **one Tarot card** to reveal guidance or affirmation for the moment.  
-Same `mode` parameter applies.
+### Firefox extension
+Numerology Report Generator Pro:
 
-## 💥 v0.0.6 – Divine Expansion! (July 7, 2025)
+- GitHub: https://github.com/dakidarts/numerology-report-generator-pro
+- Firefox Add-ons: https://addons.mozilla.org/en-US/firefox/addon/numerology-report-generator/
 
-### ✨ What’s New in v0.0.6
+---
 
-We've added **9 transformational new endpoints**, expanding into **affirmations, ancestral decoding, vibrational time tracking**, and more — expanding the spiritual toolkit from 71 to **80 endpoints**!
+## Open-source astrology engine (Python library + CLI)
 
-### 🔢 New Endpoints
+If you want a lightweight, open-source astrology stack outside the full hosted platform, use **OpAstro**.
 
-| Endpoint | Description |
-|----------|-------------|
-| `/personal-day` | Returns personal day number & meaning based on DOB + date |
-| `/personal-month` | Returns personal month number & meaning |
-| `/lucky-days-calendar` | Generates a 9–10 week lucky day calendar |
-| `/date-meaning` | Reduces any date (YYYY-MM-DD) into a numerological meaning |
-| `/email-numerology` | Decodes numerology energy from an email address |
-| `/cornerstone-letter` | Gets the first letter of a name and its cornerstone meaning |
-| `/capstone-letter` | Gets the last letter of a first name and its capstone meaning |
-| `/ancestor-reading` | Calculates ancestral number & spiritual legacy from family name |
-| `/personal-day-affirmations` | Stoic-style daily affirmations based on personal day number |
+**OpAstro** is our open-source astrology engine for Python developers and indie astrologers:
 
-Each endpoint supports **GET** and **POST** and includes robust **error handling**, `status` codes, and spiritual insights for devs, creators, and seekers.
+- Python library + CLI interface
+- lightweight sibling of our main production horoscope engine
+- built for local workflows, scripting, and indie product integration
+- practical for developers who want direct control and self-managed usage
 
-### 💸 Updated Pricing Plans
+- **Repo:** https://github.com/dakidarts/opastro
+- **Site:** https://opastro.com/
 
-We’ve **slashed pricing** and boosted request limits to support more developers, apps, and spiritual platforms.
+> If OpAstro helps your work, please star the repo.
+> GitHub stars help the algorithm recommend the project to more builders.
 
-| Plan      | Old Price → New Price | Old Requests → New Requests |
-|-----------|------------------------|------------------------------|
-| **Pro**   | `$9.99` → `$9.17`      | `100,000` → `130,000` req/month |
-| **Ultra** | `$69.99` → `$63.17`    | `350,000` → `550,000` req/month |
-| **Mega**  | `$399.99` → `$369.17`  | `1,000,000` → `2,000,000` req/month |
+---
 
-👉 **Free Plan** still available with up to `100 requests/month`.
+## Authority and release discipline
 
-## 🚀 v0.0.7 — *“The Awakening Release”* (August, 2025)
+This platform has evolved through continuous releases from early public numerology tooling into a broader intelligence platform with:
 
-We’re leveling up! v0.0.7 introduces **5 brand new endpoints**, expanding insights into personal numerology, life cycles, and hidden patterns in names.
+- 203+ documented endpoint/reference pages in the current release docs
+- direct-platform and marketplace distribution
+- versioned changelogs and release documentation
+- enterprise-style metadata wrappers
+- multilingual validation across supported surfaces
+- an internal horoscope engine replacing dependence on legacy third-party flows
 
-This release also **includes our groundbreaking discovery** by Etuge Anselm E. — the **Hidden Passion Position Number (HPPN) & Gap Resonance**, giving users a deeper understanding of how personal energy manifests.
+v1.0.0 marks the transition from “feature collection” to **structured platform architecture**.
 
-Check out the full research here: [Hidden Passion Position Number & Gap Resonance Research Paper](https://dakidarts.com/p/research-paper-hidden-passion-position-number-hppn-gap-resonance-by-etuge-anselm-e/)
+---
 
-![HPPN & Gap Resonance Release Paper](https://res.cloudinary.com/ds64xs2lp/image/upload/v1755804804/HPPN-and-Gap-Resonance_bgp1fg.jpg)
+## Repository purpose
 
-### New Endpoints in v0.0.7
+This GitHub repository serves as the public-facing home for:
 
-#### 1️⃣ `/hidden-passion`
+- project identity and platform overview
+- release visibility
+- ecosystem links
+- documentation entry points
+- product credibility and technical positioning
 
-* Calculates your **classic Hidden Passion Number** based on the most frequent letters in your name.
-* Returns **number, meaning, and detailed meaning**.
-* Supports **GET & POST** requests.
+If you are looking to integrate the API, start with the docs and dashboard rather than the repository itself.
 
-#### 2️⃣ `/maturity-number`
+---
 
-* Computes your **Maturity Number** using your **Life Path Number and Destiny Number**.
-* Reveals the **life purpose theme** you evolve into as you mature.
-* Returns **number, meaning, and detailed meaning**.
-* Supports **GET & POST** requests.
+## Getting started
 
-#### 3️⃣ `/hidden-passion-positions` 💡
+### 1) Open the docs
+Start here:
 
-* Brand new discovery by **Etuge Anselm E.**
-* Calculates **Hidden Passion Position Number (HPPN)** and **Gap Resonance** for your dominant letters.
-* Shows **letter positions, sum, reduced HPPN, gap vector, and meanings**.
-* Adds **a fresh dimension to traditional Hidden Passion numerology**.
-* [Read the Research Paper & Download Here](https://dakidarts.com/p/research-paper-hidden-passion-position-number-hppn-gap-resonance-by-etuge-anselm-e/)
-* Supports **GET & POST** requests.
+- https://docs.numerologyapi.com/
 
-#### 4️⃣ `/pinnacle-cycles` 
+### 2) Create or access your account
+Open the dashboard:
 
-* Breaks your life into **4 major long-term cycles** (higher-level than Personal Year Numbers).
-* Each cycle includes: **start/end years, number, meaning, detailed meaning**.
-* Helps discover **life patterns, challenges, and opportunities**.
-* Supports **GET & POST** requests.
+- https://dashboard.numerologyapi.com/
 
-#### 5️⃣ `/planes-of-expression` 
+### 3) Pick your access path
+Choose between:
 
-* Maps letters in your **name** to **4 energy planes**: Physical, Mental, Emotional, Intuitive.
-* Returns **counts, meaning, and detailed meaning** for each plane.
-* Reveals **dominant energies, balance, and hidden traits**.
-* Supports **GET & POST** requests.
+- direct platform access for the newest and extended surfaces
+- RapidAPI for supported marketplace surfaces
 
-### 🔧 Notes & Improvements
+### 4) Test endpoints
+Use the documentation examples and reference pages to begin integrating.
 
-* All endpoints now handle **GET & POST requests**.
-* Error handling improved across new endpoints — returns **status codes** with error messages.
-* All endpoints return **meanings and detailed meanings** wherever applicable.
-* Ready for integration with **RapidAPI**.
+---
 
-### 🌟 Use this Release
+## Selected feature timeline
 
-* Extend numerology insights beyond classic calculations.
-* Discover **new layers of personality and destiny** with HPPN & Gap Resonance.
-* Analyze **long-term cycles and energy planes** to optimize growth and alignment.
+### Early platform foundation
+The platform started with core numerology, zodiac sign intelligence, and major horoscope sections.
 
-## 🚀 v0.0.8 — “The Mirror Dimension Release” (September, 2025)
+### Birth charts and visual astrology
+Added:
 
-We step through the looking glass. v0.0.8 introduces **mirror-based numerology** — unlocking the hidden balance and reflective cycles between numbers. This release reveals how numbers mirror each other, form energetic loops, and guide us through transformation.
+- `/birth-chart`
+- `/birth-chart/svg`
 
-Check out the full research here: [Research Paper: Mirror Numbers and Cycles Research Paper](https://dakidarts.com/p/mirror-numbers-and-circles-novel-extensions-in-numerological-analysis/)
+### Tarot surfaces
+Added tarot reading endpoints for multi-card and power-card use cases.
 
-![HPPN & Gap Resonance Release Paper](https://res.cloudinary.com/ds64xs2lp/image/upload/v1757113153/Mirror-Numbers-Formula_vqm8j1.jpg)
+### Advanced numerology releases
+Expanded into:
 
-#### ✨ New Endpoints in v0.0.8
+- hidden passion positions
+- mirror numbers
+- essence cycles
+- bridge numbers
+- compatibility systems
+- angel number synchronicities
+- personal hour
+- lifecycle and timing intelligence
 
-#### 1️⃣ `/mirror-numbers` 💡
+### v0.1.1
+Expanded themed, human-centered response quality and companion ecosystem tooling.
 
-Returns the **Mirror Grid** — mapping each number (1–9, 11, 22, 33) to its reflective counterpart.
+### v1.0.0
+Unified release for major numerology and horoscope expansion, documentation maturity, route normalization, and in-house engine authority.
 
-* Supports both `GET` & `POST`.
-* Input: `base` (optional) → single number analysis, or full grid if omitted.
-* Input: `expanded` (optional bool) → adds **detailed meaning + cycles**.
-* Output: mirror number, keyword, meaning, and (if expanded) detailed meaning, cycles, and cycle keywords.
+---
 
-#### 2️⃣ `/mirror-path` 💡
+## Brand and philosophy
 
-Projects your **Mirror Path & Cycles** from a given birth date or base number.
+The Numerology API is built at the intersection of:
 
-* Shows how your numbers reflect into one another over time.
-* Returns **mirror transitions**, cycle loops, and meanings.
-* Useful for tracing karmic reflections and life balance themes.
-* Supports both `GET` & `POST`.
+- symbolic intelligence
+- developer usability
+- structured automation
+- spiritual tooling
+- production-grade delivery
 
-### 🔧 Notes & Improvements
+It is designed to help builders create products that are not only functional, but meaningful.
 
-* Added **expanded analysis mode** with cycle tracing.
-* Unified reduction logic for base numbers (respects master numbers 11, 22, 33).
-* Full error handling with status codes and descriptive error messages.
-* All responses return **keywords, meanings, and detailed meanings** where available.
+> “As within, so without. As in the code, so in the cosmos.”
 
-### 🌟 Use this Release
+---
 
-* Explore the **mirror dimension of numerology** — see how numbers reflect hidden aspects of the self.
-* Trace **cycles and loops** for deeper karmic insight.
-* Integrate **mirror grid + mirror path** into spiritual apps, coaching tools, and personal dashboards.
-* Unlock new guidance for balance, duality, and transformation.
+## Stay connected
 
-## 🚀 v0.0.9 — “The Ascension Pathway Release”
+- **Website:** https://numerologyapi.com/
+- **Docs:** https://docs.numerologyapi.com/
+- **Dashboard:** https://dashboard.numerologyapi.com/
+- **RapidAPI:** https://rapidapi.com/dakidarts-dakidarts-default/api/the-numerology-api
+- **X:** https://x.com/dakidarts/
+- **GitHub:** https://github.com/dakidarts/the-numerology-api
 
-**Release Date:** September 27, 2025
-**Version:** 0.0.9
+---
 
-### ✨ New Endpoints
+## License and contribution
 
-#### 1️⃣ Personal Hour
+This repository is primarily a public project and platform-facing repository.
 
-* **Endpoint:** `/personal-hour`
-* **Description:** Calculate the personal hour number based on a user’s birthdate, target date, and timezone.
-* **Features:**
+For platform usage, integration, and endpoint access, use the official docs and dashboard.  
+For collaboration or partnership opportunities, reach out through Dakidarts channels.
 
-  * Supports `GET` and `POST`.
-  * Optional `target_date` parameter (`YYYY-MM-DD`). Defaults to current date.
-  * Optional `timezone_offset` (default: `Europe/Paris`).
-  * Returns **single-digit numerology** for the hour, meaning, and 4-line detailed meaning.
+---
 
-#### 2️⃣ Numerology Compatibility Score
-
-* **Endpoint:** `/compatibility-score`
-* **Description:** Compare numerology numbers of two people for relationship insights.
-* **Features:**
-
-  * Calculates **Life Path, Heart’s Desire, Personality, Hidden Passion, Attitude, Balance, Subconscious Self, Rational Thought, Destiny** numbers.
-  * Full names are merged before calculating **Hidden Passion**.
-  * Returns individual scores, overall compatibility, and textual insights.
-  * Supports `GET` query parameters and `POST` JSON body.
-
-#### 3️⃣ Angel Number Synchronicities
-
-* **Endpoint:** `/angel-number-sync`
-* **Description:** Returns meanings for repeating digits or mirrored angel number patterns.
-* **Features:**
-
-  * Detects repeated digits (e.g., `1111`, `2222`).
-  * Detects mirrored patterns (e.g., `1221`, `1212`).
-  * Reduces number to core numerology vibration and returns **base meaning**, **detailed meaning**, and **synchronicity insight**.
-  * Supports both `GET` and `POST`.
-
-
-### 🔄 Updated Endpoints
-
-* **Personal Day** `/personal-day`
-
-  * Added optional `timezone_offset` parameter.
-  * Uses user-local time for accurate personal day calculation.
-
-* **Personal Month** `/personal-month`
-
-  * Added optional `timezone_offset` parameter.
-  * Ensures personal month calculation aligns with user’s local date.
-
-
-### ⚡ Improvements
-
-* All numerology endpoints now consistently return:
-  * `meaning`
-  * `detailed_meaning` (expanded descriptions)
-* Timezone handling added for **personal day, personal month, and personal hour** to ensure local accuracy.
-* Improved error handling for invalid dates, timezones, and missing parameters.
-
-
-### 📌 Notes
-
-* Master numbers (11, 22, 33) are supported where relevant.
-* Personal hour only uses **single-digit numerology**.
-
-🔥 **v0.0.9 marks our most comprehensive numerology release yet — local timezone support, compatibility insights, angel synchronicities, and richer detailed meanings across the board!**
-
-##  🚀 v0.1.0 — “The Galactic Blueprint Release” (Oct 29, 2025)
-
-The **Dakidarts Numerology API** reaches its **first major milestone** — crossing **100 powerful endpoints**.
-This release expands the numerological universe with *deeper spiritual analytics* and *premium cosmic insights* for advanced users and developers.
-
-### ✨ **New Endpoints (v0.1.0)**
-
-Unlock 10 advanced numerology tools for deeper personality and life-path decoding:
-
-| Endpoint            | Description                                                                                                    |
-| ------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `/birth-day-number` | Returns the **Birth Day Number** and its meaning (based purely on the day of birth).                           |
-| `/life-essence`     | Combines **Life Path + Soul Urge + Expression** for a unified vibration summary — your core essence blueprint. |
-
-#### 🌌 Cycles & Transits
-
-| Endpoint         | Description                                                                                           |
-| ---------------- | ----------------------------------------------------------------------------------------------------- |
-| `/essence-cycle` | Calculates your **Essence Cycles**, showing numerological influence patterns across life periods.     |
-| `/transits`      | Returns **letter-based transits** derived from name vibrations, revealing yearly personal influences. |
-
-#### 🌠 Minor Numbers (Hidden Aspects)
-
-| Endpoint              | Description                                                              |
-| --------------------- | ------------------------------------------------------------------------ |
-| `/minor-personality`  | Reveals how your **short name / nickname** shapes external impressions.  |
-| `/minor-heart-desire` | Shows inner emotional drives derived from **vowels in your short name**. |
-| `/minor-expression`   | Shows outer expression derived from the **full short name** vibration.   |
-
-#### 🧩 Bridge Numbers (Connections Between Vibrations)
-
-| Endpoint                    | Description                                                                                                  |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `/life-expression-bridge`   | Bridge between **Life Path & Expression** — reveals how your purpose meets your talents.                     |
-| `/life-birthday-bridge`     | Bridge between **Life Path & Birth Day** — shows how to harmonize core life goals with natural gifts.        |
-| `/heart-personality-bridge` | Bridge between **Heart’s Desire & Personality** — shows alignment between inner emotions and outer behavior. |
-
-### ⚙️ Improvements
-
-* **Unified GET & POST Support:** Every endpoint supports both GET and POST requests for maximum flexibility.
-* **Enhanced Error Handling:** Cleaner, consistent error responses across all endpoints.
-
-### 🧠 Stats Snapshot
-
-* **Total Endpoints:** 100
-* **Premium Endpoints:** 10
-* **Release Date:** Oct 29, 2025
-* **Codename:** *“The Galactic Blueprint Release”*
-
-### 📜 Example (Birth Day Endpoint)
-
-**Endpoint:** `/birth-day`
-**Methods:** `GET`, `POST`
-
-**Parameters:**
-
-```json
-{
-  "birthdate": "1998-04-27"
-}
-```
-
-**Response:**
-
-```json
-{
-  "birth_day_number": 27,
-  "keyword": "The Humanitarian Sage",
-  "meaning": "Compassionate, wise, and a spiritual guide for the collective.",
-  "detailed_meaning": "27 reduces to 9 with a strong 7 overlay. You merge analytical depth with universal love, often drawn to teaching, writing, or healing on a large scale. Your soul’s mission is enlightenment through service. Shadow work: release perfectionism; imperfect action still moves the world.",
-  "status": 200
-}
-```
-
-## 🚀 v0.1.1 — “The Conscious Expansion Release”
-**Release Date:** Jan 10, 2026
-
-
-### 🌌 Overview
-
-Version **v0.1.1** marks a **major evolutionary leap** for the Numerology & Astrology API.
-
-This release goes far beyond new endpoints — it represents a **deep refinement of the entire system**, transforming the API from a numerical calculator into a **conscious intelligence engine** delivering rich, themed, and human-centered insights.
-
-All **core numerology endpoints (17+)** have been enhanced to return **context-aware, spiritually grounded, and clarity-driven responses**, making the API more intuitive, insightful, and valuable for real-world use cases.
-
-### ✨ What’s New
-
-#### 🔮 New Endpoints (5 Added)
-
-The following **premium report endpoints** were introduced, expanding the API into **relationship, cycle, and life-pattern intelligence**:
-
-1. **Personal Cycle Report**
-   - Combines **Personal Year** and **Universal Year** cycles
-   - Explains how individual energy interacts with the collective timeline
-   - Designed for clarity, planning, and conscious decision-making
-
-2. **Lifestyle Compatibility Report**
-   - Analyzes daily habits, routines, social life, and living dynamics
-   - Ideal for couples, co-living partners, and long-term alignment
-
-3. **Communication Compatibility Report**
-   - Explores expression styles, listening quality, conflict resolution, and emotional intelligence
-   - Focuses on how conversations actually flow between two people
-
-4. **Growth & Evolution Compatibility Report**
-   - Examines mutual growth potential, change support, and spiritual or personal evolution
-   - Built for conscious relationships and long-term transformation
-
-5. **Financial Compatibility Report**
-   - Analyzes money mindset, risk tolerance, wealth-building potential, and financial dynamics
-   - Ideal for couples, spouses, and business collaborators
-
-
-#### 🧠 Core API Enhancements
-
-- ✅ **17+ core numerology endpoints upgraded**
-- 🎨 All responses now return **themed, content-rich interpretations**
-- 📖 Improved clarity and narrative flow for end users
-- 🌱 More human, intuitive, and spiritually grounded insights
-- 🧩 Consistent structure across all endpoints for easier integration
-
-These upgrades significantly improve:
-- User understanding
-- Client-facing report quality
-- Coaching, spiritual, and advisory applications
-
-
-#### ⚡ Performance & Stability
-
-- Minor bug fixes across multiple endpoints
-- Improved caching strategies (LRU + response-level caching)
-- Faster response times for high-frequency endpoints
-- Improved consistency in metadata and response formatting
-
-
-### 🧩 Tooling & Ecosystem Expansion
-
-#### 🧾 Firefox Extension: Numerology Report Generator Pro
-
-To support practitioners, coaches, and everyday users, we released a companion browser tool:
-
-- **GitHub Repository**  
-  👉 https://github.com/dakidarts/numerology-report-generator-pro
-
-- **Firefox Add-ons Store**  
-  👉 https://addons.mozilla.org/en-US/firefox/addon/numerology-report-generator/
-
-#### Key Features:
-- Generate **intuitive numerology PDF reports directly from the browser**
-- No coding required
-- Ideal for:
-  - Numerologists
-  - Coaches
-  - Spiritual practitioners
-  - Content creators
-  - Everyday users seeking insight
-
-This extension bridges the gap between **API power** and **real-world usability**.
-
-
-### 🧬 Why This Release Matters
-
-v0.1.1 represents a shift from:
-> **“Calculations” → “Conscious Interpretation”**
-
-The API is now positioned as:
-- A **numerology intelligence platform**
-- A **relationship and cycle awareness engine**
-- A foundation for **spiritual, coaching, and personal development tools**
-
-
-### 🛣️ Looking Ahead
-
-Future versions will continue expanding into:
-- Karmic & soul-level compatibility
-- Advanced cycle forecasting
-- Consciousness-aware numerology models
-- Deeper integrations with tools and extensions
-
-
-**Thank you to everyone building with the Numerology & Astrology API.**  
-This journey is just beginning 🌌
-
-## Stay Connected
-
-- 🌐 **Official Website:** [Visit Dakidarts](https://dakidarts.com/api/the-numerology-api/)
-- 🐦 **X (Twitter):** [@dakidarts](https://x.com/dakidarts/) - Stay updated with the latest developments and announcements.
-
-Embrace the magic of numbers, stars, and cosmic revelations—start your journey with the Astro-Numerology API today!
-
-🚀 *Empower your applications with cosmic insights!* 🚀
+<p align="center">
+  <strong>Build with numbers. Ship with clarity. Scale with structured cosmic intelligence.</strong>
+</p>
