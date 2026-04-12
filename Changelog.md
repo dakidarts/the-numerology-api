@@ -1,5 +1,796 @@
 # The Numerology API Changelog
 
+## Numerology Expansion + Horoscope Expansion v1.0.0 Unified Changelog
+
+![Full Horoscope Engine Architecture](https://res.cloudinary.com/ds64xs2lp/image/upload/q_auto/f_auto/v1775911991/v1-0-0-release_gdkp0h.svg)
+
+**Release date:** 2026-04-12  
+**Version:** v1.0.0  
+**Scope:** Full platform release covering **The Numerology API**, **Horoscope Expansion**: including extended endpoint rollout, engine-backed horoscope report migration, request/response normalization, documentation parity, multilingual validation, and production integration guidance.
+
+---
+
+### Overview
+
+v1.0.0 is a major production release across the Dakidarts API platform. It brings together two large tracks of work into one coordinated rollout:
+
+1. **Numerology Expansion**
+   - Adds the complete extended numerology surface.
+   - Expands timing/cycle coverage with personal week and universal day/week/month/year.
+   - Introduces deeper spiritual, relationship, identity, and shadow-analysis endpoints.
+   - Completes documentation parity, response examples, and multilingual smoke validation.
+
+2. **Horoscope Expansion**
+   - Completes the major migration of horoscope report generation to the in-house Swiss Ephemeris engine.
+   - Canonicalizes engine-backed report routes under `/api/v1/horoscope/reports/*`.
+   - Adds broad section coverage across daily, weekly, monthly, and yearly periods.
+   - Introduces periodized planetary, aspects, transit, and house report suites.
+   - Tightens payload consistency, personalization behavior, compatibility aliases, and docs parity.
+
+This changelog is intended to serve as the single source of truth for integrators, internal rollout review, support, migration planning, and customer-facing release communication.
+
+### Platform-Wide Highlights
+
+#### What v1.0.0 delivers across the platform
+
+- Major **v1.0.0 production release** for both Numerology API and Horoscope API.
+- Broad expansion of **endpoint surface area** across numerology and horoscope products.
+- Completion of **engine-backed horoscope computation migration** for major report flows.
+- Completion of the **Extended Numerology** release track.
+- Improved **POST-first structured request patterns** for upgraded horoscope routes.
+- Broader support for **rich response payloads**, enterprise wrappers, and metadata consistency.
+- Stronger **documentation parity** across public docs and example payloads.
+- Successful **multilingual smoke validation** for numerology extended endpoints.
+- Improved **route clarity**, **compatibility handling**, and **migration guidance** for production clients.
+- Expanded support for **personalized calculations** where birth vectors and advanced request fields are provided.
+- Improved operational clarity around timezone, zodiac system, ayanamsa, house systems, and node behavior in horoscope request flows.
+
+### Release Composition Summary
+
+#### Numerology Expansion
+- New endpoint families added: **23**
+- Combined operations added (`GET`/`POST`): **41**
+- Validation/smoke requests executed: **205**
+- Documented multilingual smoke success: **100.0%**
+- Extended release model: **additive**, with no formal deprecations in the new extended suite
+
+#### Horoscope Expansion
+- Major report surfaces migrated to the in-house engine
+- New report suites added across:
+  - planetary
+  - aspects
+  - transits
+  - house
+  - planet-house
+- Canonical report namespace established under:
+  - `/api/v1/horoscope/reports/*`
+- Multiple legacy routes retained as hidden compatibility aliases while public docs move forward with canonical paths
+
+## Part I — Numerology API v1.0.0
+
+### Numerology Expansion Highlights
+
+- Added the full **Extended Numerology** surface documented under the extended documentation section.
+- Added and completed **Personal Week** with full GET/POST parity and rich response payload support.
+- Added and completed **Universal Cycle extensions**:
+  - Universal Day
+  - Universal Week
+  - Universal Month
+  - Universal Year
+- Standardized extended endpoint docs with complete parameter tables, options, response examples, and related endpoint linking.
+- Confirmed multilingual smoke coverage across `en`, `es`, `de`, `fr`, `pt` at **100% success** for extended operations.
+- Clarified access model: extended endpoints are **direct-platform only** and are **not currently supported via RapidAPI gateway**.
+
+### Numerology Expansion — New Endpoints Added
+
+This release adds **23 extended endpoint families** and **41 operations** (`GET`/`POST` combined).
+
+#### A) Cycles and Timing Endpoints
+
+| Endpoint | Methods | Path |
+|---|---|---|
+| Personal Week | `GET`, `POST` | `/api/v1/personal-week` |
+| Universal Year | `GET`, `POST` | `/api/v1/universal-year` |
+| Universal Month | `GET`, `POST` | `/api/v1/universal-month` |
+| Universal Week | `GET`, `POST` | `/api/v1/universal-week` |
+| Universal Day | `GET`, `POST` | `/api/v1/universal-day` |
+| Monthly Energy Heatmap | `GET`, `POST` | `/api/v1/monthly-energy-heatmap` |
+| Caution Dates Calendar | `GET`, `POST` | `/api/v1/caution-dates-calendar` |
+
+#### B) Identity and Name Intelligence Endpoints
+
+| Endpoint | Methods | Path |
+|---|---|---|
+| Username Numerology | `GET`, `POST` | `/api/v1/username-numerology` |
+| Business Name Numerology | `GET`, `POST` | `/api/v1/business-name-numerology` |
+| Brand Name Compare | `POST` | `/api/v1/brand-name-compare` |
+| Name Change Impact | `GET`, `POST` | `/api/v1/name-change-impact` |
+| Date Alignment Check | `GET`, `POST` | `/api/v1/date-alignment-check` |
+
+#### C) Spiritual and Shadow Analysis Endpoints
+
+| Endpoint | Methods | Path |
+|---|---|---|
+| Aura Frequency Reading | `GET`, `POST` | `/api/v1/aura-frequency-reading` |
+| Chakra Numerology | `GET`, `POST` | `/api/v1/chakra-numerology` |
+| Past Life Patterns | `GET`, `POST` | `/api/v1/past-life-patterns` |
+| Shadow Work Number | `GET`, `POST` | `/api/v1/shadow-work-number` |
+| Soul Contract Reading | `GET`, `POST` | `/api/v1/soul-contract-reading` |
+| Soul Connection Indicator | `POST` | `/api/v1/soul-connection-indicator` |
+| Spiritual Gifts Reading | `GET`, `POST` | `/api/v1/spiritual-gifts-reading` |
+| Sacred Balance Reading | `GET`, `POST` | `/api/v1/sacred-balance-reading` |
+
+#### D) Relationship Dynamics Endpoints
+
+| Endpoint | Methods | Path |
+|---|---|---|
+| Relationship Composite | `POST` | `/api/v1/relationship-composite` |
+| Relationship Healing Reading | `POST` | `/api/v1/relationship-healing-reading` |
+| Parent Child Numerology | `POST` | `/api/v1/parent-child-numerology` |
+
+### Numerology API — Updated and Fixed Endpoints
+
+#### A) Newly Completed Core Extended Surfaces
+
+The following newly introduced surfaces were completed end-to-end in this release cycle with request validation and rich meaning output:
+
+- `GET /api/v1/personal-week`
+- `POST /api/v1/personal-week`
+- `GET /api/v1/universal-year`
+- `POST /api/v1/universal-year`
+- `GET /api/v1/universal-month`
+- `POST /api/v1/universal-month`
+- `GET /api/v1/universal-week`
+- `POST /api/v1/universal-week`
+- `GET /api/v1/universal-day`
+- `POST /api/v1/universal-day`
+
+#### B) Stability Fixes Applied During Smoke Validation
+
+Five operations that initially produced `422` under generated smoke inputs were stabilized for production-like test input coverage and now return successful responses under multilingual smoke:
+
+- `POST /api/v1/brand-name-compare`
+- `GET /api/v1/caution-dates-calendar`
+- `POST /api/v1/caution-dates-calendar`
+- `GET /api/v1/monthly-energy-heatmap`
+- `POST /api/v1/monthly-energy-heatmap`
+
+#### C) Practical Validation Rules Reinforced
+
+The following constraints were tightened and clarified during validation and documentation work:
+
+- Brand compare requires at least **two entries** in `names[]`.
+- Calendar and heatmap month inputs use the `YYYY-MM` format.
+- Caution dates `top_n` remains bounded to the range **`1..31`**.
+- Client payloads benefit from prevalidation before submission to reduce avoidable `422` or format-level errors.
+
+#### D) Documentation and OpenAPI Parity Fixes
+
+All extended docs were normalized for integration parity:
+
+- complete parameter tables per method
+- parameter option details
+- patterns, ranges, defaults, and nested object fields
+- rich response example sections based on smoke-generated payloads
+- standardized access and availability notes
+- dashboard CTA, note sections, and related endpoint footers
+
+### Numerology API — QA Verification Snapshot
+
+Validation artifacts for the extended numerology suite:
+
+- Summary files: **23**
+- Operations tested: **41**
+- Total requests executed: **205**
+- Overall success rate: **100.0%**
+- Language success:
+  - `en` — 100%
+  - `es` — 100%
+  - `de` — 100%
+  - `fr` — 100%
+  - `pt` — 100%
+
+This release closes the extended numerology launch cycle with production-ready validation confidence across the documented language set.
+
+
+### Numerology API — Deprecations
+
+For the **Numerology Extended v1.0.0** release, no endpoint in the extended surface is formally deprecated.
+
+| Endpoint | Status in v1.0.0 | Replacement | Notes |
+|---|---|---|---|
+| None | Not applicable | Not applicable | Extended suite is additive in this release. |
+
+
+### Numerology API — Breaking Changes
+
+No breaking path removals are introduced for the extended numerology surface in this release.
+
+That said, integrators should note the following rollout-level expectations:
+
+- Extended endpoints are **not available through RapidAPI** at this time.
+- Clients integrating extended endpoints should target the direct platform host.
+- Some new endpoints are `POST`-only by design and should not be assumed to have `GET` parity.
+
+### Numerology API — Migration Notes
+
+#### 1) Access Channel Migration
+
+Extended endpoints are available via direct platform access:
+
+- Base URL: `https://api.numerologyapi.com`
+- Authentication:
+  - `X-API-Key: YOUR_API_KEY`
+  - or `Authorization: Bearer YOUR_API_KEY`
+
+Extended endpoints are currently **not supported via RapidAPI gateway**.
+
+#### 2) GET vs POST Usage Guidance
+
+Most extended endpoints support both `GET` and `POST` with equivalent output intent.
+
+Use:
+
+- `GET` for simple query-based calls
+- `POST` for stronger payload structure, nested objects, and SDK/backend consistency
+
+Post-only endpoints in this release include:
+
+- `/api/v1/brand-name-compare`
+- `/api/v1/relationship-composite`
+- `/api/v1/relationship-healing-reading`
+- `/api/v1/parent-child-numerology`
+- `/api/v1/soul-connection-indicator`
+
+#### 3) Client-Side Input Validation Rules
+
+Recommended client-side prevalidation:
+
+- `dob` and `target_date`: `YYYY-MM-DD`
+- `month`: `YYYY-MM`
+- `timezone_offset`: valid IANA timezone string
+- `top_n`: integer in range `1..31`
+- `names[]`: minimum of 2 entries for brand compare
+- `context` for date alignment: max length `80`, normalized aliases accepted
+
+#### 4) Nested Request Body Patterns
+
+For relationship and compatibility endpoints, use explicit nested objects such as:
+
+- `person_a`
+- `person_b`
+- `parent`
+- `child`
+
+Each object should include required fields such as:
+
+- `full_name`
+- `dob`
+
+#### 5) Language and Metadata Handling
+
+Extended numerology endpoints support multilingual response rendering via `lang`.
+
+Supported language set for smoke-verified coverage:
+
+- `en`
+- `es`
+- `de`
+- `fr`
+- `pt`
+
+Responses may include enterprise-style metadata wrappers:
+
+- `_enterprise`
+- `_api_metadata_`
+
+Clients should preserve and parse these fields where useful for platform analytics, plan information, or endpoint metadata.
+
+#### 6) Newly Added Cycle Coverage
+
+Clients previously using only personal day/month/year flows can now extend schedule logic to cover:
+
+- weekly personal cycles via `/api/v1/personal-week`
+- collective timing surfaces via:
+  - `/api/v1/universal-day`
+  - `/api/v1/universal-week`
+  - `/api/v1/universal-month`
+  - `/api/v1/universal-year`
+
+#### 7) Documentation Source of Truth
+
+The full endpoint-level integration pages for this release are maintained under the extended documentation section, including index and per-endpoint pages.
+
+### Numerology API — Recommended Upgrade Checklist
+
+- Move extended calls to direct API access at `https://api.numerologyapi.com`.
+- Ensure request validators enforce date, month, and timezone formats.
+- Add fallback handling for multilingual `lang` values where needed.
+- Update clients to parse `_enterprise` and `_api_metadata_` consistently.
+- For nested endpoints, align SDK request models to required object keys.
+- Validate against smoke fixtures before promoting to production.
+- Confirm all extended calls are routed outside RapidAPI-based client assumptions.
+
+### Numerology API — Release Notes Summary
+
+Numerology API v1.0.0 introduces the complete extended numerology surface with weekly and universal cycle expansion, advanced relationship and spiritual analyses, richer request/response contracts, and fully synchronized documentation plus smoke-test parity.
+
+## Part II — Horoscope Expansion v1.0.0
+
+### Horoscope Expansion Highlights
+
+- Completed migration of major horoscope report flows to the in-house Swiss Ephemeris engine.
+- Standardized upgraded report endpoints around **POST-first request bodies**.
+- Added broad **section-first coverage** across daily, weekly, monthly, and yearly periods.
+- Restructured **planetary report endpoints** by period and section/overview parity.
+- Renamed the planets glossary endpoint to reflect its **informational** behavior rather than report behavior.
+- Expanded natal birth chart request parity and tightened response-shape validation.
+- Normalized upgraded endpoint responses to engine payload plus enterprise metadata wrappers.
+- Updated public docs examples with smoke-backed JSON parity.
+
+### Horoscope Expansion — New Endpoints Added
+
+#### A) New Helper and Canonical Surfaces
+
+- `GET /api/v1/horoscope/timezones`
+
+#### B) Planetary Report Suite (Periodized Surface)
+
+Sections (non-general):
+
+- `POST /api/v1/horoscope/reports/planetary/daily`
+- `POST /api/v1/horoscope/reports/planetary/weekly`
+- `POST /api/v1/horoscope/reports/planetary/monthly`
+- `POST /api/v1/horoscope/reports/planetary/yearly`
+
+Overview (general-only):
+
+- `POST /api/v1/horoscope/reports/planetary/daily/overview`
+- `POST /api/v1/horoscope/reports/planetary/weekly/overview`
+- `POST /api/v1/horoscope/reports/planetary/monthly/overview`
+- `POST /api/v1/horoscope/reports/planetary/yearly/overview`
+
+Expanded planetary section coverage across periods includes engine-supported sections such as:
+
+- `communication`
+- `friendship`
+- `lifestyle`
+- `career`
+- `health`
+- `money`
+- `love_singles`
+- `love_couples`
+
+#### C) Aspect Report Suite (Periodized Surface)
+
+Sections (non-general):
+
+- `POST /api/v1/horoscope/reports/aspects/daily`
+- `POST /api/v1/horoscope/reports/aspects/weekly`
+- `POST /api/v1/horoscope/reports/aspects/monthly`
+- `POST /api/v1/horoscope/reports/aspects/yearly`
+
+Overview (general-only):
+
+- `POST /api/v1/horoscope/reports/aspects/daily/overview`
+- `POST /api/v1/horoscope/reports/aspects/weekly/overview`
+- `POST /api/v1/horoscope/reports/aspects/monthly/overview`
+- `POST /api/v1/horoscope/reports/aspects/yearly/overview`
+
+`aspects/*` supports:
+
+- public mode
+- personalized mode
+- optional deterministic `aspect` override
+- the same section model used across upgraded horoscope routes
+
+#### D) Transit Report Suite (Periodized Surface)
+
+Sections (non-general):
+
+- `POST /api/v1/horoscope/reports/transits/daily`
+- `POST /api/v1/horoscope/reports/transits/weekly`
+- `POST /api/v1/horoscope/reports/transits/monthly`
+- `POST /api/v1/horoscope/reports/transits/yearly`
+
+Overview (general-only):
+
+- `POST /api/v1/horoscope/reports/transits/daily/overview`
+- `POST /api/v1/horoscope/reports/transits/weekly/overview`
+- `POST /api/v1/horoscope/reports/transits/monthly/overview`
+- `POST /api/v1/horoscope/reports/transits/yearly/overview`
+
+`transits/*` supports:
+
+- public mode
+- personalized mode
+- optional deterministic `transit` override
+- the same section model used across upgraded horoscope routes
+
+#### E) House Report Suite (Personalized-Only, Periodized Surface)
+
+House reports (non-general sections):
+
+- `POST /api/v1/horoscope/reports/house/daily`
+- `POST /api/v1/horoscope/reports/house/weekly`
+- `POST /api/v1/horoscope/reports/house/monthly`
+- `POST /api/v1/horoscope/reports/house/yearly`
+
+House overviews (general-only):
+
+- `POST /api/v1/horoscope/reports/house/daily/overview`
+- `POST /api/v1/horoscope/reports/house/weekly/overview`
+- `POST /api/v1/horoscope/reports/house/monthly/overview`
+- `POST /api/v1/horoscope/reports/house/yearly/overview`
+
+Planet-house reports (non-general sections):
+
+- `POST /api/v1/horoscope/reports/planet/house/daily`
+- `POST /api/v1/horoscope/reports/planet/house/weekly`
+- `POST /api/v1/horoscope/reports/planet/house/monthly`
+- `POST /api/v1/horoscope/reports/planet/house/yearly`
+
+Planet-house overviews (general-only):
+
+- `POST /api/v1/horoscope/reports/planet/house/daily/overview`
+- `POST /api/v1/horoscope/reports/planet/house/weekly/overview`
+- `POST /api/v1/horoscope/reports/planet/house/monthly/overview`
+- `POST /api/v1/horoscope/reports/planet/house/yearly/overview`
+
+Both route families are **personalized-only** and are backed by engine endpoints such as:
+
+- `/house-horoscope`
+- `/planet-house-horoscope`
+
+#### F) Report Namespace Canonicalization
+
+Canonical live-report paths now use the `/api/v1/horoscope/reports/*` namespace across upgraded engine-backed horoscope surfaces.
+
+Legacy non-report paths remain registered as hidden compatibility aliases.
+
+#### G) Newly Added Horoscope Section Route Families Across Periods
+
+##### Communication
+
+- `POST /api/v1/horoscope/reports/communication/daily/today`
+- `POST /api/v1/horoscope/reports/communication/daily/tomorrow`
+- `POST /api/v1/horoscope/reports/communication/daily/yesterday`
+- `POST /api/v1/horoscope/reports/communication/weekly`
+- `POST /api/v1/horoscope/reports/communication/monthly`
+- `POST /api/v1/horoscope/reports/communication/yearly`
+
+##### Friendship
+
+- `POST /api/v1/horoscope/reports/friendship/daily/today`
+- `POST /api/v1/horoscope/reports/friendship/daily/tomorrow`
+- `POST /api/v1/horoscope/reports/friendship/daily/yesterday`
+- `POST /api/v1/horoscope/reports/friendship/weekly`
+- `POST /api/v1/horoscope/reports/friendship/monthly`
+- `POST /api/v1/horoscope/reports/friendship/yearly`
+
+##### Lifestyle
+
+- `POST /api/v1/horoscope/reports/lifestyle/daily/today`
+- `POST /api/v1/horoscope/reports/lifestyle/daily/tomorrow`
+- `POST /api/v1/horoscope/reports/lifestyle/daily/yesterday`
+- `POST /api/v1/horoscope/reports/lifestyle/weekly`
+- `POST /api/v1/horoscope/reports/lifestyle/monthly`
+- `POST /api/v1/horoscope/reports/lifestyle/yearly`
+
+##### Love Split Surfaces (Singles/Couples)
+
+- `POST /api/v1/horoscope/reports/love_singles/daily/today`
+- `POST /api/v1/horoscope/reports/love_singles/daily/tomorrow`
+- `POST /api/v1/horoscope/reports/love_singles/daily/yesterday`
+- `POST /api/v1/horoscope/reports/love_singles/weekly`
+- `POST /api/v1/horoscope/reports/love_singles/monthly`
+- `POST /api/v1/horoscope/reports/love_couples/daily/today`
+- `POST /api/v1/horoscope/reports/love_couples/daily/tomorrow`
+- `POST /api/v1/horoscope/reports/love_couples/daily/yesterday`
+- `POST /api/v1/horoscope/reports/love_couples/weekly`
+- `POST /api/v1/horoscope/reports/love_couples/monthly`
+
+##### Yearly Section Additions
+
+- `POST /api/v1/horoscope/reports/health/yearly`
+- `POST /api/v1/horoscope/reports/money/yearly`
+
+#### H) Renamed Informational Planets Surface
+
+- `GET /api/v1/horoscope/planets-info`
+- `POST /api/v1/horoscope/planets-info`
+
+This replaces the prior `/horoscope/planets` naming for the informational glossary-style behavior.
+
+### Horoscope Expansion — Updated and Fixed Endpoints
+
+#### A) Engine Migration and Behavior Updates
+
+The following existing route families were upgraded to in-house engine-backed behavior:
+
+##### Main report routes
+- `POST /api/v1/horoscope/reports/today`
+- `POST /api/v1/horoscope/reports/yesterday`
+- `POST /api/v1/horoscope/reports/tomorrow`
+- `POST /api/v1/horoscope/reports/weekly`
+- `POST /api/v1/horoscope/reports/monthly`
+- `POST /api/v1/horoscope/reports/yearly`
+
+##### Existing category routes upgraded from legacy horoscope.com-backed behavior
+- career
+- health
+- love
+- money
+
+##### Existing and legacy families restructured and upgraded
+- legacy love routes split into `love_singles` and `love_couples`
+- combined `yearly/career_money` behavior replaced by dedicated yearly career and yearly money routes
+- planetary legacy report and overview routes moved to periodized routes
+
+#### B) Zodiac Sign Description Route Clarification
+
+The following surfaces remain descriptive sign endpoints rather than live-report endpoints:
+
+- `/api/v1/horoscope/sign/personality`
+- `/api/v1/horoscope/sign/communication`
+- `/api/v1/horoscope/sign/friendship`
+- `/api/v1/horoscope/sign/love`
+- `/api/v1/horoscope/sign/lifestyle`
+- `/api/v1/horoscope/sign/health`
+- `/api/v1/horoscope/sign/career`
+- `/api/v1/horoscope/sign/money`
+- `/api/v1/horoscope/sign/parent_child`
+- `/api/v1/horoscope/sign/spirituality`
+- `/api/v1/horoscope/sign/shadow`
+
+#### C) Birthday Horoscope Parity Update
+
+`POST /api/v1/horoscope/reports/birthday` now exposes engine-native request keys while retaining compatibility keys.
+
+Canonical upgraded surface:
+
+- `POST /api/v1/horoscope/reports/birthday`
+
+Hidden compatibility aliases retained:
+
+- `/api/v1/horoscope/birthday`
+- `/api/v1/horoscope/sign/birthday`
+
+Engine-native request keys exposed:
+
+- `sign`
+- `target_date`
+- `birth`
+- `sections`
+- `zodiac_system`
+- `ayanamsa`
+- `house_system`
+- `node_type`
+- `tenant_id`
+
+Compatibility keys retained:
+
+- `dob`
+- `timezone`
+- `year`
+- `birth_time`
+- `birth_latitude`
+- `birth_longitude`
+- `birth_timezone`
+
+#### D) Natal Birth Chart Parity Update
+
+These surfaces existed prior to v1.0.0 and are now upgraded for fuller engine parity:
+
+- `POST /api/v1/birth-chart`
+- `POST /api/v1/birth-chart/svg`
+
+Improvements include:
+
+- fuller gateway-to-engine request option support
+- wheel configuration field parity
+- stricter response-shape guards
+
+#### E) Response Contract Normalization
+
+Upgraded horoscope engine-backed endpoints return:
+
+- raw engine response payload
+- `_enterprise`
+- `_api_metadata_`
+
+#### F) Timezone and Relative-Day Handling
+
+Daily endpoints using `today`, `yesterday`, and `tomorrow` now apply timezone-aware target-date resolution via IANA timezone input.
+
+#### G) Personalization Support Clarification
+
+Where supported, personalized reports are activated by providing birth-vector fields such as:
+
+- `birth_time`
+- `birth_latitude`
+- `birth_longitude`
+- `birth_timezone`
+
+If omitted, routes remain usable in generalized sign-based mode.
+
+### Horoscope Expansion — Deprecated, Hidden, and Removed Endpoints
+
+| Endpoint | Status in v1.0.0 | Replacement | Notes |
+|---|---|---|---|
+| Legacy planetary aggregate report route | Removed | Period routes under `/reports/planetary/` with period-specific paths plus matching `/overview` routes | Aggregate entrypoint removed after periodized parity completion. |
+| `POST /api/v1/horoscope/planetary/overview` | Deprecated (hidden from OpenAPI) | `POST /api/v1/horoscope/reports/planetary/daily/overview`, `POST /api/v1/horoscope/reports/planetary/weekly/overview`, `POST /api/v1/horoscope/reports/planetary/monthly/overview`, `POST /api/v1/horoscope/reports/planetary/yearly/overview` | Replaced by period-specific overview routes. |
+| `POST /api/v1/horoscope/planetary/daily/sections` | Hidden alias | `POST /api/v1/horoscope/reports/planetary/daily` | Internal compatibility alias. |
+| `POST /api/v1/horoscope/love_single/monthly` | Deprecated alias (hidden) | `POST /api/v1/horoscope/reports/love_singles/monthly` | Kept for compatibility. |
+| `POST /api/v1/horoscope/weekly/retail` | Deprecated (hidden from OpenAPI/docs) | None | Weekly retail surface retired from public docs. |
+| Legacy flexible aggregate horoscope route | Removed | Section-specific report routes and period overview routes | Aggregate entrypoint removed after full endpoint split. |
+| `POST /api/v1/horoscope/yearly/career_money` | Removed | `POST /api/v1/horoscope/reports/career/yearly` and `POST /api/v1/horoscope/reports/money/yearly` | Combined endpoint split into dedicated routes. |
+| `POST /api/v1/horoscope/love/{today,tomorrow,yesterday}` | Removed active registration | `POST /api/v1/horoscope/reports/love_singles/daily/{today,tomorrow,yesterday}` or `POST /api/v1/horoscope/reports/love_couples/daily/{today,tomorrow,yesterday}` | Daily love is now split by relationship context. |
+| `GET /api/v1/horoscope/planets` and `POST /api/v1/horoscope/planets` | Renamed/removed | `GET /api/v1/horoscope/planets-info` and `POST /api/v1/horoscope/planets-info` | Informational endpoint rename for clarity. |
+
+
+### Horoscope Expansion — Breaking Changes
+
+- Route rename: `/api/v1/horoscope/planets` → `/api/v1/horoscope/planets-info`
+- Canonical namespace for live engine-backed horoscope reports is now `/api/v1/horoscope/reports/*`
+- Combined daily love routes replaced by explicit singles and couples paths
+- Combined yearly `career_money` route removed in favor of dedicated yearly routes
+- Planetary generic report and overview endpoints deprecated in favor of period-structured routes
+- Upgraded engine-backed routes standardized around POST-first request bodies
+
+### Horoscope Expansion — Compatibility Notes
+
+- Legacy `/api/v1/horoscope/report/*` routes remain available as hidden backward-compatible aliases
+- Public docs and OpenAPI now present only the canonical `/api/v1/horoscope/reports/*` namespace
+- New integrations should adopt `/reports/*` paths immediately
+
+### Horoscope Expansion — Migration Notes
+
+#### 1) Endpoint Path Migration Map
+
+- `GET/POST /api/v1/horoscope/planets` → `GET/POST /api/v1/horoscope/planets-info`
+- `POST /api/v1/horoscope/report/{surface}` → `POST /api/v1/horoscope/reports/{surface}`
+- `POST /api/v1/horoscope/{surface}` → `POST /api/v1/horoscope/reports/{surface}`
+- `POST /api/v1/horoscope/planetary/overview` → `POST /api/v1/horoscope/reports/planetary/{period}/overview`
+- legacy planetary aggregate route → `POST /api/v1/horoscope/reports/planetary/{period}` or overview equivalent
+- legacy flexible aggregate horoscope route → section-specific routes or overview routes
+- `POST /api/v1/horoscope/yearly/career_money` → split into yearly career and yearly money routes
+- legacy love daily routes → split into `love_singles` or `love_couples` daily routes
+
+#### 2) Request Payload Migration
+
+For upgraded engine-backed routes, use structured POST bodies with fields such as:
+
+- `dob`
+- `timezone`
+- period selectors such as `day`, `target_date`, or `year`
+- optional engine options:
+  - `zodiac_system`
+  - `ayanamsa`
+  - `house_system`
+  - `node_type`
+  - `tenant_id`
+- optional personalization fields:
+  - `birth_time`
+  - `birth_latitude`
+  - `birth_longitude`
+  - `birth_timezone`
+
+#### 3) Planetary Route Migration Rules
+
+- use `sections` only on non-overview planetary period routes
+- `general` is exposed via dedicated `/overview` routes
+
+#### 4) Response Parser Migration
+
+Clients should parse:
+
+- report payload fields directly from the response body
+- `_enterprise`
+- `_api_metadata_`
+
+#### 5) Translation Behavior Note
+
+The horoscope engine itself does not generate multilingual content directly, so report based endpoints currently support but `en` only.
+
+Non-report endpoints continue to support full multilingual translation through gateway helper layers using `lang`, such as:
+
+- `en`
+- `es`
+- `de`
+- `fr`
+- `pt`
+
+
+### Horoscope Expansion — Documentation and QA Parity Completed
+
+- Public docs updated for upgraded horoscope routes
+- Legacy planetary docs replaced by period-specific planetary docs
+- Career and money docs split where combined routes were removed
+- Smoke-backed example JSON synchronized with endpoint responses for upgraded docs
+
+
+### Horoscope Expansion — Recommended Client Upgrade Checklist
+
+- Update all renamed and deprecated paths using the migration map
+- Switch any legacy GET consumers of upgraded report routes to POST body requests
+- Add timezone to all daily flows to avoid relative-date drift
+- Add personalization fields where user-specific editorials are desired
+- Update response parsers to retain `_enterprise` and `_api_metadata_`
+- Re-run integration tests against all horoscope endpoints used in production
+
+
+### Horoscope Expansion — Release Notes Summary
+
+Numerology API v1.0.0 completes a major engine-parity rollout, expands report coverage across sections and periods, introduces cleaner canonical route structure, and establishes a clearer production surface for future iterations of the in-house horoscope engine.
+
+## Part III — Cross-API Integration Guidance
+
+### Unified Integration Notes for Clients Using The Numerology API
+
+Clients that consume both Numerology endpoints and Horoscope endpoints should review the following together:
+
+#### Authentication and Access
+- Numerology extended endpoints are direct-platform only (no RapidAPI gateway support)
+- Engine backed horoscope routes are also direct-platform only and continue under their canonical API namespace with upgraded gateway patterns
+- Preserve support for enterprise-style metadata wrappers
+
+#### Request Modeling
+- Prefer explicit structured POST bodies for all newly upgraded or expanded routes
+- Validate date formats, period selectors, timezone strings, and nested objects client-side
+- Where available, supply personalization vectors for richer outputs
+
+#### Timezone and Date Semantics
+- Numerology endpoints depend on correct date and month formats
+- Horoscope daily routes depend on correct timezone handling for relative-day resolution
+- IANA timezone strings are strongly recommended where supported
+
+#### Language Handling
+- Numerology extended endpoints have smoke-verified multilingual rendering
+- Engine backed horoscope routes continue to support `en` only
+
+#### Production Rollout Advice
+- update SDKs and request validators first
+- refresh integration tests second
+- then promote route/path changes to production clients
+- monitor any hidden compatibility aliases still in use internally so they can be retired later with confidence
+
+## Part IV — Final Release Summary
+
+### What v1.0.0 means
+
+v1.0.0 is the point where both surfaces become substantially more complete and production-shaped:
+
+- **Numerology API** now exposes a far richer extended catalog spanning timing, identity, spiritual insight, shadow work, relationships, compatibility, and predictive calendars.
+- **Horoscope reports** now stand on a much stronger engine-backed foundation with canonical report namespaces, broader section coverage, clearer migration patterns, and better parity across report families.
+- Documentation, examples, validation behavior, and compatibility guidance are significantly more mature than in the pre-v1.0.0 state.
+
+This release is not just a version bump. It is a structural release that improves:
+
+- platform completeness
+- route clarity
+- client migration readiness
+- documentation confidence
+- enterprise integration consistency
+
+---
+
+### Operational Recommendation
+
+For all active integrators, the recommended path is:
+
+1. adopt canonical routes immediately
+2. update request models for POST-first payloads where applicable
+3. preserve metadata wrapper parsing
+4. validate timezone/date formats client-side
+5. move numerology extended consumers to direct platform access
+6. re-run full integration smoke coverage before production rollout
+
+### Closing Note
+
+This unified changelog reflects the v1.0.0 release state for **The Numerology API** and consolidates the major rollout work completed for the **2026-04-12** release window.
+
+
 ## 🚀 v0.1.1 — “The Conscious Expansion Release”
 **Release Date:** Jan 10, 2026
 
