@@ -1,5 +1,42 @@
 # The Numerology API Changelog
 
+## v1.0.1 - Full Multilingual Systems Release (June 8, 2026)
+
+![The Numerology API v1.0.1 release banner](https://res.cloudinary.com/ds64xs2lp/image/upload/v1780938449/v1-0-1-release_fhre9c.svg)
+
+v1.0.1 expands The Numerology API with full multilingual support for supported numerology responses, production-ready multi-system numerology through `num_sys`, and 10 new direct API endpoint families.
+
+### New
+
+- Added full 8-language support for supported numerology/helper responses: `en`, `fr`, `es`, `de`, `pt`, `ja`, `hi`, `ar`.
+- Added production-ready numerology-system selection for supported name-based calculations: `pythagorean`, `chaldean`, and `vedic`.
+- Added 10 new direct API endpoint families:
+  - `GET/POST /api/v1/career-path-numerology`
+  - `GET/POST /api/v1/wealth-code-reading`
+  - `GET/POST /api/v1/home-address-numerology`
+  - `GET/POST /api/v1/baby-name-forecast`
+  - `GET/POST /api/v1/team-dynamics-numerology`
+  - `GET/POST /api/v1/domain-name-numerology`
+  - `GET/POST /api/v1/product-name-numerology`
+  - `GET/POST /api/v1/decision-crossroads-reading`
+  - `GET/POST /api/v1/launch-timing-numerology`
+  - `GET/POST /api/v1/personal-archetype-stack`
+- Added localized v1.0.1 release/docs coverage for all 8 supported languages.
+- Updated platform messaging to reflect **210+ total endpoints** and **130+ horoscope-focused routes**.
+
+### Fixes
+
+- Validated the new multilingual JSON meaning bundles for structure, placeholders, URL/API-token parity, and leakage safety.
+- Hardened Vedic numerology as an explicit supported system with separate mapping ownership and Latin diacritic normalization.
+- Aligned Chaldean and Vedic missing-value handling so `9` is not incorrectly reported as a missing alphabet value.
+- Kept public routes clean under `/api/v1/*` and removed the public-facing `extended` route prefix from v1.0.1 endpoint URLs.
+- Refreshed dashboard/internal docs discovery so v1.0.1 endpoints appear as combined `GET,POST` catalog entries.
+- Refreshed website language switching, localized sitemap entries, and release messaging for v1.0.1.
+
+### Deprecated
+
+- No production endpoint was deprecated in v1.0.1.
+
 ## Numerology Expansion + Horoscope Expansion v1.0.0 Unified Changelog
 
 ![Full Horoscope Engine Architecture](https://res.cloudinary.com/ds64xs2lp/image/upload/q_auto/f_auto/v1775911991/v1-0-0-release_gdkp0h.svg)
