@@ -20,36 +20,36 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-v1.0.1-22c55e?style=flat-square" alt="Version v1.0.1" />
-  <img src="https://img.shields.io/badge/docs-210%2B%20endpoint%20pages-0f766e?style=flat-square" alt="201+ endpoint pages" />
-  <img src="https://img.shields.io/badge/languages-en%20%7C%20es%20%7C%20de%20%7C%20fr%20%7C%20pt%20%7C%20ar%20%7C%20hi%20%7C%20ja-1d4ed8?style=flat-square" alt="Languages" />
+  <img src="https://img.shields.io/badge/version-v1.0.2-22c55e?style=flat-square" alt="Version v1.0.2" />
+  <img src="https://img.shields.io/badge/docs-220%2B%20endpoint%20pages-0f766e?style=flat-square" alt="220+ endpoint pages" />
+  <img src="https://img.shields.io/badge/languages-26%20supported-1d4ed8?style=flat-square" alt="26 supported languages" />
   <img src="https://img.shields.io/badge/engine-Swiss%20Ephemeris%20powered-0f172a?style=flat-square" alt="Swiss Ephemeris powered engine" />
 </p>
 
 > The Numerology API by Dakidarts is an enterprise-grade numerology, horoscope, astrology, and divination API for production apps, SaaS products, bots, dashboards, and spiritual intelligence experiences.
 >
-> The current platform exposes **210+ API endpoints**, including **130+ horoscope routes**, direct API key access, credit-based billing, localized response support, and multi-system numerology across **Pythagorean, Chaldean, and Vedic** calculations.
+> The current platform exposes **220+ API endpoints**, including **130+ horoscope routes**, direct API key access, credit-based billing, 26-language localized response support, and multi-system numerology across **Pythagorean, Chaldean, and Vedic** calculations.
 
 ---
 
 <p align="center">
-  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1780938449/v1-0-1-release_fhre9c.svg" alt="v1.0.1 - Full Multilingual Systems Release" width="100%" />
+  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1781891816/v1-0-2-release_ev5dhf.svg" alt="v1.0.2 - Extended 26-Language Release" width="100%" />
 </p>
 
 ## Latest Release
 
-**v1.0.1 - Full Multilingual Systems Release**
+**v1.0.2 - Extended 26-Language Release**
 
-v1.0.1 expands the direct API platform with full multilingual support for supported numerology responses, hardened numerology-system selection through `num_sys`, and 10 new production-ready endpoint families.
+Released on **June 19, 2026**, v1.0.2 expands the direct API platform with 10 more extended endpoint families, full 26-language response coverage, and continued multi-system numerology support through `num_sys` where letter-based identity is part of the calculation.
 
 Highlights:
 
-- **8 supported response languages:** `en`, `fr`, `es`, `de`, `pt`, `ja`, `hi`, `ar`
+- **26 supported response languages:** `en`, `es`, `de`, `fr`, `pt`, `ar`, `hi`, `ja`, `ru`, `tr`, `it`, `pl`, `nl`, `id`, `ko`, `th`, `ro`, `ur`, `gu`, `bn`, `vi`, `ta`, `te`, `mr`, `pa`, `zh`
 - **Multi-system numerology:** `pythagorean`, `chaldean`, `vedic`
-- **10 new direct API endpoint families** for career, wealth, addresses, baby names, teams, domains, products, decisions, launch timing, and archetype stacks
-- **Production validation:** localized JSON meanings, endpoint contracts, docs, and dashboard discovery refreshed for v1.0.1
+- **10 new v1.0.2 endpoint families** for relationship milestones, relocation fit, vehicle identity, phone-number personal fit, signatures, pets, creative projects, family legacy, education paths, and travel destination alignment
+- **Production validation:** expanded localized JSON meanings, endpoint contracts, dashboard docs, command palette discovery, and public docs refreshed for v1.0.2
 
-Read the full release notes: [v1.0.1 changelog](https://docs.numerologyapi.com/changelog/changelog-v1-0-1/)
+Read the full release notes: [v1.0.2 changelog](https://docs.numerologyapi.com/changelog/changelog-v1-0-2/)
 
 <p align="center">
   <a href="https://dashboard.numerologyapi.com/credits">
@@ -64,7 +64,7 @@ Read the full release notes: [v1.0.1 changelog](https://docs.numerologyapi.com/c
 - **Horoscope and Astrology:** Daily, weekly, monthly, yearly, planetary, zodiac, compatibility, astrology report, transit, aspect, house, and chart-oriented endpoints.
 - **Business and Product Readings:** Business names, brand comparisons, product names, domain names, launch timing, decision analysis, and wealth/career readings.
 - **Relationship and Family Readings:** Relationship composites, healing readings, parent-child numerology, team dynamics, and soul connection indicators.
-- **Multilingual Output:** Supported numerology/helper responses can use `lang=en|fr|es|de|pt|ja|hi|ar`.
+- **Multilingual Output:** Supported numerology/helper responses can use any of the 26 supported language codes, including `en`, `fr`, `es`, `de`, `pt`, `ja`, `hi`, `ar`, `ru`, `tr`, `it`, `pl`, `nl`, `id`, `ko`, `th`, `ro`, `ur`, `gu`, `bn`, `vi`, `ta`, `te`, `mr`, `pa`, and `zh`.
 - **Production Operations:** API keys, dashboard access, credits, usage visibility, internal docs, and direct-host deployment at `api.numerologyapi.com`.
 
 ## Example Request
@@ -75,6 +75,23 @@ curl -X GET "https://api.numerologyapi.com/api/v1/career-path-numerology?full_na
 ```
 
 POST requests also support `lang` in the query string and `num_sys` in the JSON body where the endpoint supports numerology systems.
+
+## v1.0.2 Endpoint Families
+
+The v1.0.2 release adds these direct API endpoint families:
+
+| Endpoint | Methods | Purpose |
+| --- | --- | --- |
+| `/api/v1/relationship-milestone-numerology` | GET, POST | Milestone-specific relationship resonance from two people and a key relationship date |
+| `/api/v1/relocation-compatibility` | GET, POST | Symbolic fit between a person and a city, country, address, or move date |
+| `/api/v1/vehicle-identity-numerology` | GET, POST | Vehicle plate, name, purchase date, and owner-profile identity reading |
+| `/api/v1/phone-number-personal-fit` | GET, POST | Phone-number vibration fit against name and birth profile |
+| `/api/v1/signature-numerology` | GET, POST | Signature, initials, title, or public-name alignment against a legal name |
+| `/api/v1/pet-name-harmony` | GET, POST | Pet-name and household-fit reading for companion animals |
+| `/api/v1/creative-project-numerology` | GET, POST | Creative title, creator profile, release date, and audience-goal alignment |
+| `/api/v1/family-legacy-matrix` | GET, POST | Family-system report from surname, member names, dates, and roles |
+| `/api/v1/education-path-numerology` | GET, POST | Learner, field of study, institution, and enrollment timing fit |
+| `/api/v1/travel-destination-alignment` | GET, POST | Traveler-to-destination resonance by dates and trip purpose |
 
 ## v1.0.1 Endpoint Families
 
@@ -96,6 +113,7 @@ The v1.0.1 release adds these direct API endpoint families:
 ## Documentation
 
 - Public docs: [docs.numerologyapi.com](https://docs.numerologyapi.com/)
+- v1.0.2 release notes: [Extended 26-Language Release](https://docs.numerologyapi.com/changelog/changelog-v1-0-2/)
 - v1.0.1 release notes: [Full Multilingual Systems Release](https://docs.numerologyapi.com/changelog/changelog-v1-0-1/)
 - Dashboard/signup: [dashboard.numerologyapi.com](https://dashboard.numerologyapi.com/signup)
 - Website: [numerologyapi.com](https://numerologyapi.com/)
@@ -192,14 +210,14 @@ If you want a lightweight, open-source astrology stack outside the full hosted p
 
 This platform has evolved through continuous releases from early public numerology tooling into a broader intelligence platform with:
 
-- 203+ documented endpoint/reference pages in the current release docs
+- 220+ documented endpoint/reference pages in the current release docs
 - direct-platform and marketplace distribution
 - versioned changelogs and release documentation
 - enterprise-style metadata wrappers
 - multilingual validation across supported surfaces
 - an internal horoscope engine replacing dependence on legacy third-party flows
 
-v1.0.0 marks the transition from “feature collection” to **structured platform architecture**.
+v1.0.2 marks the current release line for expanded direct API coverage, 26-language response support, and production-ready multi-system numerology.
 
 ---
 
@@ -305,7 +323,7 @@ It is designed to help builders create products that are not only functional, bu
 
 This repository is primarily a public project and platform-facing repository.
 
-For platform usage, integration, and endpoint access, use the official docs and dashboard.  
+For platform usage, integration, and endpoint access, use the official docs and dashboard.
 For collaboration or partnership opportunities, reach out through Dakidarts channels.
 
 ---
