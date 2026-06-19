@@ -53,7 +53,7 @@ Read the full release notes: [v1.0.2 changelog](https://docs.numerologyapi.com/c
 
 <p align="center">
   <a href="https://dashboard.numerologyapi.com/credits">
-  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1780992687/numerology-api-banner_l73pov.png" alt="v1.0.1 Release Promo" width="100%" />
+  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1781900000/numerology-api-banner_fpcyqy.png" alt="v1.0.2 Release Promo" width="100%" />
   </a>
 </p>
 
