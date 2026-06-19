@@ -1,8 +1,57 @@
 # The Numerology API Changelog
 
-## v1.0.1 - Full Multilingual Systems Release (June 8, 2026)
+<div align="center">
+  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1781891816/v1-0-2-release_ev5dhf.svg" alt="Numerology API v1.0.2 Changelog" style="max-width: 100%; border-radius: 12px; margin: 1em 0;">
+</div>
 
-![The Numerology API v1.0.1 release banner](https://res.cloudinary.com/ds64xs2lp/image/upload/v1780938449/v1-0-1-release_fhre9c.svg)
+**Release date:** 2026-06-19  
+**Version:** v1.0.2  
+**Scope:** Extended endpoint families, 26-language response coverage, dynamic locale meanings, and production validation.
+
+v1.0.2 expands the direct Numerology API platform beyond the already-released v1.0.1 milestone. v1.0.1 remains the released 8-language, multi-system numerology launch; v1.0.2 prepares the next generation of extended endpoint families and the 18 additional language bundles required for full 26-locale delivery.
+
+## General Release Overview
+
+This release focuses on practical, product-ready extended numerology experiences: relationships, relocation, vehicle identity, phone-number fit, signatures, pets, creative projects, family systems, education paths, and travel destinations. Each endpoint supports `GET` and `POST`, returns the same JSON meaning families across languages, and uses `num_sys` where name, title, or letter-based calculations affect the result.
+
+### New
+
+- Added 10 new v1.0.2 extended endpoint families:
+  - `GET`, `POST` `/api/v1/relationship-milestone-numerology`
+  - `GET`, `POST` `/api/v1/relocation-compatibility`
+  - `GET`, `POST` `/api/v1/vehicle-identity-numerology`
+  - `GET`, `POST` `/api/v1/phone-number-personal-fit`
+  - `GET`, `POST` `/api/v1/signature-numerology`
+  - `GET`, `POST` `/api/v1/pet-name-harmony`
+  - `GET`, `POST` `/api/v1/creative-project-numerology`
+  - `GET`, `POST` `/api/v1/family-legacy-matrix`
+  - `GET`, `POST` `/api/v1/education-path-numerology`
+  - `GET`, `POST` `/api/v1/travel-destination-alignment`
+- Added localized meaning bundles for all 26 supported locale folders:
+  - v1.0.1 release languages: `en`, `fr`, `es`, `de`, `pt`, `ja`, `hi`, `ar`
+  - v1.0.2 expansion languages: `ru`, `tr`, `it`, `pl`, `nl`, `id`, `ko`, `th`, `ro`, `ur`, `gu`, `bn`, `vi`, `ta`, `te`, `mr`, `pa`, `zh`
+- Added `num_sys` support for all v1.0.2 endpoints where letter-based identity is part of the calculation.
+- Added symbolic safety disclaimers in response payloads for vehicle, pet, and travel-style reports where users may otherwise overread the output.
+- Exposed the new endpoints through the dashboard internal docs and command palette via the live API catalog.
+- Added English MkDocs pages for all 10 new endpoint families. Translated docs can be generated from these drafts later.
+
+### Fixes
+
+- Normalized staged v1.0.2 meaning JSON from `json_meanings/_extended` into each production language directory.
+- Preserved v1.0.1 documentation language claims as 8-language release claims, instead of rewriting historical release notes to 26 languages.
+- Added regression coverage so dashboard docs and command palette discovery include the v1.0.2 endpoints.
+- Added locale-structure validation coverage for the expanded meaning bundle set.
+
+### Deprecated
+
+- No production endpoint is deprecated in v1.0.2.
+- RapidAPI gateway support remains unavailable for the extended endpoint suite unless separately announced.
+
+[Open Dashboard](https://dashboard.numerologyapi.com){ .md-button .md-button--primary }
+
+---
+
+## v1.0.1 - Full Multilingual Systems Release (June 8, 2026)
 
 v1.0.1 expands The Numerology API with full multilingual support for supported numerology responses, production-ready multi-system numerology through `num_sys`, and 10 new direct API endpoint families.
 
