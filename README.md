@@ -51,12 +51,6 @@ Highlights:
 
 Read the full release notes: [v1.0.2 changelog](https://docs.numerologyapi.com/changelog/changelog-v1-0-2/)
 
-<p align="center">
-  <a href="https://dashboard.numerologyapi.com/credits">
-  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1781900000/numerology-api-banner_fpcyqy.png" alt="v1.0.2 Release Promo" width="100%" />
-  </a>
-</p>
-
 ## Core Capabilities
 
 - **Numerology Intelligence:** Life path, destiny/expression, soul urge, personality, balance, karmic lessons, cycles, bridge numbers, name readings, compatibility, timing, and extended spiritual analysis.
