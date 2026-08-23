@@ -21,14 +21,14 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-v1.0.3-22c55e?style=flat-square" alt="Version v1.0.3" />
-  <img src="https://img.shields.io/badge/docs-210%2B%20endpoint%20pages-0f766e?style=flat-square" alt="201+ endpoint pages" />
-  <img src="https://img.shields.io/badge/languages-en%20%7C%20es%20%7C%20de%20%7C%20fr%20%7C%20pt%20%7C%20ar%20%7C%20hi%20%7C%20ja-1d4ed8?style=flat-square" alt="Languages" />
+  <img src="https://img.shields.io/badge/docs-220%2B%20endpoint%20pages-0f766e?style=flat-square" alt="220+ endpoint pages" />
+  <img src="https://img.shields.io/badge/languages-26%20supported-1d4ed8?style=flat-square" alt="26 supported languages" />
   <img src="https://img.shields.io/badge/engine-Swiss%20Ephemeris%20powered-0f172a?style=flat-square" alt="Swiss Ephemeris powered engine" />
 </p>
 
 > The Numerology API by Dakidarts is an enterprise-grade numerology, horoscope, astrology, and divination API for production apps, SaaS products, bots, dashboards, and spiritual intelligence experiences.
 >
-> The current platform exposes **210+ API endpoints**, including **130+ horoscope routes**, direct API key access, credit-based billing, localized response support, and multi-system numerology across **Pythagorean, Chaldean, and Vedic** calculations.
+> The current platform exposes **220+ API endpoints**, including **130+ horoscope routes**, direct API key access, credit-based billing, 26-language localized response support, and multi-system numerology across **Pythagorean, Chaldean, and Vedic** calculations.
 
 ---
 
@@ -40,12 +40,12 @@
 
 **v1.0.3 - Zodiac Intelligence and Numora Studio Beta Release**
 
-v1.0.3 adds five dedicated zodiac intelligence endpoint families, improves planetary and Birth Day reliability, introduces on-demand translation-provider routing, and connects the direct API platform with Numora Studio v0.1.0-beta.
+Released on **August 22, 2026**, v1.0.3 adds five dedicated zodiac intelligence endpoint families, improves planetary and Birth Day reliability, introduces on-demand translation-provider routing, and connects the direct API platform with Numora Studio v0.1.0-beta.
 
 Highlights:
 
 - **Five zodiac reference families:** Sun, Moon, Rising/Ascendant, Modality, and Element under `/api/v1/horoscope/sign/`
-- **Planetary report reliability:** `general` is now canonical and the default where a planetary selection is required
+- **Planetary report reliability:** `general` is canonical and the default where a planetary selection is required
 - **Birth Day corrections:** fixed request validation and meaning resolution while preserving GET and POST parity
 - **On-demand translation routing:** self-hosted LibreTranslate, Google Translate, and DeepL BYOK with provider metadata
 - **Birth-chart visuals:** full wheel customization support for the birth-chart SVG surface
@@ -72,7 +72,7 @@ Numora Studio is the desktop companion for working with The Numerology API. The 
 - **Horoscope and Astrology:** Daily, weekly, monthly, yearly, planetary, zodiac, compatibility, astrology report, transit, aspect, house, and chart-oriented endpoints.
 - **Business and Product Readings:** Business names, brand comparisons, product names, domain names, launch timing, decision analysis, and wealth/career readings.
 - **Relationship and Family Readings:** Relationship composites, healing readings, parent-child numerology, team dynamics, and soul connection indicators.
-- **Multilingual Output:** Supported numerology/helper responses can use `lang=en|fr|es|de|pt|ja|hi|ar`.
+- **Multilingual Output:** Supported numerology/helper responses can use any of the 26 supported language codes, including `en`, `fr`, `es`, `de`, `pt`, `ja`, `hi`, `ar`, `ru`, `tr`, `it`, `pl`, `nl`, `id`, `ko`, `th`, `ro`, `ur`, `gu`, `bn`, `vi`, `ta`, `te`, `mr`, `pa`, and `zh`.
 - **Production Operations:** API keys, dashboard access, credits, usage visibility, internal docs, and direct-host deployment at `api.numerologyapi.com`.
 
 ## Example Request
@@ -98,6 +98,23 @@ The v1.0.3 release adds five dedicated zodiac reference endpoint families:
 
 All five families return structured sign facts, symbols, archetypes, summaries, detailed meanings, and the enterprise usage wrapper through the shared response pipeline.
 
+## v1.0.2 Endpoint Families
+
+The v1.0.2 release adds these direct API endpoint families:
+
+| Endpoint | Methods | Purpose |
+| --- | --- | --- |
+| `/api/v1/relationship-milestone-numerology` | GET, POST | Milestone-specific relationship resonance from two people and a key relationship date |
+| `/api/v1/relocation-compatibility` | GET, POST | Symbolic fit between a person and a city, country, address, or move date |
+| `/api/v1/vehicle-identity-numerology` | GET, POST | Vehicle plate, name, purchase date, and owner-profile identity reading |
+| `/api/v1/phone-number-personal-fit` | GET, POST | Phone-number vibration fit against name and birth profile |
+| `/api/v1/signature-numerology` | GET, POST | Signature, initials, title, or public-name alignment against a legal name |
+| `/api/v1/pet-name-harmony` | GET, POST | Pet-name and household-fit reading for companion animals |
+| `/api/v1/creative-project-numerology` | GET, POST | Creative title, creator profile, release date, and audience-goal alignment |
+| `/api/v1/family-legacy-matrix` | GET, POST | Family-system report from surname, member names, dates, and roles |
+| `/api/v1/education-path-numerology` | GET, POST | Learner, field of study, institution, and enrollment timing fit |
+| `/api/v1/travel-destination-alignment` | GET, POST | Traveler-to-destination resonance by dates and trip purpose |
+
 ## v1.0.1 Endpoint Families
 
 The v1.0.1 release adds these direct API endpoint families:
@@ -119,6 +136,7 @@ The v1.0.1 release adds these direct API endpoint families:
 
 - Public docs: [docs.numerologyapi.com](https://docs.numerologyapi.com/)
 - v1.0.3 release notes: [Zodiac Intelligence and Numora Studio Beta Release](https://docs.numerologyapi.com/changelog/changelog-v1-0-3/)
+- v1.0.2 release notes: [Extended 26-Language Release](https://docs.numerologyapi.com/changelog/changelog-v1-0-2/)
 - v1.0.1 release notes: [Full Multilingual Systems Release](https://docs.numerologyapi.com/changelog/changelog-v1-0-1/)
 - Dashboard/signup: [dashboard.numerologyapi.com](https://dashboard.numerologyapi.com/signup)
 - Website: [numerologyapi.com](https://numerologyapi.com/)
@@ -215,14 +233,14 @@ If you want a lightweight, open-source astrology stack outside the full hosted p
 
 This platform has evolved through continuous releases from early public numerology tooling into a broader intelligence platform with:
 
-- 203+ documented endpoint/reference pages in the current release docs
+- 220+ documented endpoint/reference pages in the current release docs
 - direct-platform and marketplace distribution
 - versioned changelogs and release documentation
 - enterprise-style metadata wrappers
 - multilingual validation across supported surfaces
 - an internal horoscope engine replacing dependence on legacy third-party flows
 
-v1.0.0 marked the transition from “feature collection” to **structured platform architecture**. v1.0.3 extends that foundation into a connected API-and-desktop product experience through Numora Studio.
+v1.0.2 marked the expanded direct API coverage and 26-language response milestone. v1.0.3 extends that foundation with zodiac intelligence, explicit translation-provider routing, full birth-chart SVG customization, and the Numora Studio desktop beta.
 
 ---
 
@@ -296,7 +314,7 @@ Expanded themed, human-centered response quality and companion ecosystem tooling
 Unified release for major numerology and horoscope expansion, documentation maturity, route normalization, and in-house engine authority.
 
 ### v1.0.3
-Introduced the Numora Studio beta access path, organization-scoped Studio credentials and plans, percentage-based tenant usage reporting, full birth-chart SVG wheel customization, and refreshed release surfaces.
+Added five zodiac reference endpoint families, planetary and Birth Day reliability fixes, on-demand translation providers, full birth-chart SVG wheel customization, response metadata updates, and Numora Studio v0.1.0-beta.
 
 ---
 
