@@ -59,7 +59,7 @@ Read the full release notes: [v1.0.3 changelog](https://docs.numerologyapi.com/c
 Numora Studio is the desktop companion for working with The Numerology API. The v1.0.3 release introduces Numora Studio v0.1.0-beta for macOS, Windows, and Linux, using the API's dedicated Studio channel and `tnsr_` credentials.
 
 <p align="center">
-  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1787386785/for-git_n0ulpg.png" alt="Numora Studio desktop app" width="100%" />
+  <img src="https://res.cloudinary.com/ds64xs2lp/image/upload/v1787524773/numora-spot-lifepath-light_xobjta.png" alt="Numora Studio desktop app" width="100%" />
 </p>
 
 - **Desktop repository:** https://github.com/dakidarts/numora-studio-desktop
