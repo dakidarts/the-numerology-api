@@ -1,8 +1,111 @@
 # The Numerology API Changelog
 
-## v0.0.2 - Celestial Expansion (13 Dec, 2023)
+## v1.0.3 - Zodiac Intelligence and Numora Studio Beta Release (August 22, 2026)
 
-### New Features:
+![The Numerology API v1.0.3 release banner](https://res.cloudinary.com/ds64xs2lp/image/upload/v1787480189/v1-0-3-release_lsbajc.svg)
+
+v1.0.3 is a product-facing release across the direct API and its practitioner tooling. It adds a complete zodiac sign reference surface, makes planetary report behavior more predictable, improves a core numerology endpoint, and gives horoscope-report consumers explicit control over on-demand translation providers. It also introduces **Numora Studio v0.1.0-beta** for macOS, Windows, and Linux.
+
+### New
+
+- Added five dedicated zodiac reference families under `/api/v1/horoscope/sign/`: Sun, Moon, Rising/Ascendant, Modality, and Element.
+- Added full birth-chart SVG wheel customization, including presets, themes, custom palettes, panel layout, visibility controls, typography, planet colors, split output, transparent backgrounds, and compression options.
+- Added on-demand translation routing for horoscope reports through self-hosted LibreTranslate, Google Translate, and DeepL BYOK.
+- Added translation-provider observability through `_api_metadata_.translation_provider` for translated responses.
+- Released Numora Studio v0.1.0-beta for macOS, Windows, and Linux, using the dedicated `tnsr_` Studio channel.
+- Added the v1.0.3 release surface across the API website, dashboard, documentation, and localized announcement content.
+
+The five new zodiac families are:
+
+| Family | Route | Purpose |
+| --- | --- | --- |
+| Sun sign | `/api/v1/horoscope/sign/sun` | Identity, vitality, purpose, compatibility, and sign facts |
+| Moon sign | `/api/v1/horoscope/sign/moon` | Emotional, instinctive, intuitive, and inner-world readings |
+| Rising sign | `/api/v1/horoscope/sign/ascendant` | Public persona, first impressions, outer expression, and direction |
+| Modality | `/api/v1/horoscope/sign/modality` | Cardinal, fixed, and mutable sign expressions |
+| Element | `/api/v1/horoscope/sign/element` | Fire, earth, air, and water elemental expressions |
+
+All five families return structured sign facts, symbols, archetypes, summaries, detailed meanings, and the enterprise usage wrapper through the shared response pipeline. They are available through the documented `GET` and `POST` contracts.
+
+### Improvements
+
+- Standardized planetary report requests around the `general` planet option and made it the default where a planetary selection is required.
+- Corrected Birth Day Number request validation and meaning resolution while preserving GET and POST parity.
+- Refined Studio plan presentation, checkout hand-offs, API-key discovery, and desktop authorization states for the API-and-desktop workflow.
+- Updated tenant-facing Studio usage views to show calculated percentages without disclosing internal token quantities.
+- Preserved the existing direct API and PayPal payment paths while extending the platform with the Studio billing surfaces.
+- Added the Numora Studio product links for the desktop repository and the public Studio page:
+  - https://github.com/dakidarts/numora-studio-desktop
+  - https://numerologyapi.com/studio
+
+### Fixes
+
+- Removed duplicate authorization entries and corrected consent success and failure state presentation.
+- Standardized the runtime FastAPI/OpenAPI version and shared response metadata to `1.0.3`.
+- Improved localized release and dashboard copy so the v1.0.3 announcement remains consistent across supported language surfaces.
+
+### Deprecated
+
+- No production API endpoint was deprecated in v1.0.3.
+
+## v1.0.1 - Full Multilingual Systems Release (June 8, 2026)
+
+![The Numerology API v1.0.1 release banner](https://res.cloudinary.com/ds64xs2lp/image/upload/v1780938449/v1-0-1-release_fhre9c.svg)
+
+v1.0.1 expands The Numerology API with full multilingual support for supported numerology responses, production-ready multi-system numerology through `num_sys`, and 10 new direct API endpoint families.
+
+### New
+
+- Added full 8-language support for supported numerology/helper responses: `en`, `fr`, `es`, `de`, `pt`, `ja`, `hi`, `ar`.
+- Added production-ready numerology-system selection for supported name-based calculations: `pythagorean`, `chaldean`, and `vedic`.
+- Added 10 new direct API endpoint families:
+  - `GET/POST /api/v1/career-path-numerology`
+  - `GET/POST /api/v1/wealth-code-reading`
+  - `GET/POST /api/v1/home-address-numerology`
+  - `GET/POST /api/v1/baby-name-forecast`
+  - `GET/POST /api/v1/team-dynamics-numerology`
+  - `GET/POST /api/v1/domain-name-numerology`
+  - `GET/POST /api/v1/product-name-numerology`
+  - `GET/POST /api/v1/decision-crossroads-reading`
+  - `GET/POST /api/v1/launch-timing-numerology`
+  - `GET/POST /api/v1/personal-archetype-stack`
+- Added localized v1.0.1 release/docs coverage for all 8 supported languages.
+- Updated platform messaging to reflect **210+ total endpoints** and **130+ horoscope-focused routes**.
+
+### Fixes
+
+- Validated the new multilingual JSON meaning bundles for structure, placeholders, URL/API-token parity, and leakage safety.
+- Hardened Vedic numerology as an explicit supported system with separate mapping ownership and Latin diacritic normalization.
+- Aligned Chaldean and Vedic missing-value handling so `9` is not incorrectly reported as a missing alphabet value.
+- Kept public routes clean under `/api/v1/*` and removed the public-facing `extended` route prefix from v1.0.1 endpoint URLs.
+- Refreshed dashboard/internal docs discovery so v1.0.1 endpoints appear as combined `GET,POST` catalog entries.
+- Refreshed website language switching, localized sitemap entries, and release messaging for v1.0.1.
+
+### Deprecated
+
+- No production endpoint was deprecated in v1.0.1.
+
+## v1.0.0 - Stellar Intelligence Release (April 12, 2026)
+
+### New
+
+- Added 23 extended numerology endpoint families across timing, identity intelligence, spiritual analysis, and relationship dynamics.
+- Added 53+ new horoscope/report surfaces across periods, sections, astrology reports, transit, aspect, house, planet, and compatibility areas.
+- Expanded the platform to 203+ endpoints at release time, including 130+ horoscope-focused routes.
+- Added direct API dashboard, credit, and operational surfaces for production usage.
+
+### Fixes
+
+- Standardized docs and smoke-test coverage across the direct API surface.
+- Hardened migration-safe production behavior for dashboard and backend rollout.
+
+### Deprecated
+
+- No production endpoint was deprecated in v1.0.0.
+
+## v0.0.2 - Celestial Expansion (December 13, 2023)
+
+### New
 
 42. **Zodiac Sign Birthday:** Discover the unique personality traits associated with each zodiac sign based on birthdays.
 43. **Compatibility Career:** Explore astrological insights into career compatibility between individuals.
@@ -19,7 +122,7 @@
 
 ## v0.0.1 - Cosmic Inception
 
-### Initial Features:
+### Initial Features
 
 1. **Attitude/Sun Number:** Discover the essence of one's personality.
 2. **Balance Number:** Uncover the equilibrium in life.
@@ -62,8 +165,3 @@
 39. **Zodiac Sign Spirituality:** Explore the spiritual inclinations and tendencies associated with each zodiac sign.
 40. **Zodiac Sign Career & Money:** Navigate the professional and financial aspects linked to zodiac signs.
 41. **Zodiac Sign Parent & Child:** Explore the dynamics of parenting and child relationships influenced by zodiac signs.
-
-## Getting Started
-
-1. **API Integration:** Explore the comprehensive [documentation](https://dakidarts.com/showcase/the-numerology-api/) to seamlessly integrate Astro-Numerology features into your applications. You can also [view and test the API on RapidAPI](https://rapidapi.com/kidddevs/api/the-numerology-api).
-2. **Contribute:** Join the cosmic journey! Contribute to the development, share insights, and enhance the API for the community.
